@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Evoland Save Editor
+Comment=Edit Evoland 1 and Evoland 2 saves
+Exec=evoland-save-editor %f
+Icon=evoland-save-editor
+Terminal=false
+Categories=Game;Utility;

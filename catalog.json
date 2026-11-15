@@ -1,0 +1,8169 @@
+{
+  "Evo1": {
+    "items": [
+      {
+        "id": "Potion",
+        "name": "Potion",
+        "category": "Consumable"
+      },
+      {
+        "id": "Phoenix",
+        "name": "Phoenix Down",
+        "category": "Consumable"
+      },
+      {
+        "id": "Sword2",
+        "name": "Long Sword",
+        "category": "Weapon"
+      },
+      {
+        "id": "Armor2",
+        "name": "Copper Armor",
+        "category": "Armor"
+      },
+      {
+        "id": "BigSword",
+        "name": "Claud's Sword",
+        "category": "Weapon"
+      },
+      {
+        "id": "Armor3",
+        "name": "Silver Armor",
+        "category": "Armor"
+      },
+      {
+        "id": "MagicScroll",
+        "name": "Crystal Mastery Scroll",
+        "category": "Other"
+      },
+      {
+        "id": "DvdPlayer",
+        "name": "Fast DVD Player",
+        "category": "Other"
+      },
+      {
+        "id": "Bow",
+        "name": "Sacred Bow",
+        "category": "Weapon"
+      },
+      {
+        "id": "Bombs",
+        "name": "Bombs",
+        "category": "Weapon"
+      },
+      {
+        "id": "Card",
+        "name": "Rare Card",
+        "category": "Other"
+      },
+      {
+        "id": "Choboko",
+        "name": "Raw Choboko",
+        "category": "Other"
+      },
+      {
+        "id": "ChobokoCooked",
+        "name": "Cooked Choboko",
+        "category": "Other"
+      }
+    ],
+    "cards": [
+      {
+        "id": 0,
+        "code": "11",
+        "name": "Octorac",
+        "power": "3,2,2,3"
+      },
+      {
+        "id": 1,
+        "code": "12",
+        "name": "Bat",
+        "power": "4,1,1,4"
+      },
+      {
+        "id": 2,
+        "code": "13",
+        "name": "Skeleton",
+        "power": "2,3,3,2"
+      },
+      {
+        "id": 3,
+        "code": "14",
+        "name": "Red Wizard",
+        "power": "6,1,1,2"
+      },
+      {
+        "id": 4,
+        "code": "21",
+        "name": "Slime",
+        "power": "4,3,4,4"
+      },
+      {
+        "id": 5,
+        "code": "22",
+        "name": "Kobra Zero",
+        "power": "7,3,3,2"
+      },
+      {
+        "id": 6,
+        "code": "23",
+        "name": "Scaven",
+        "power": "4,3,5,3"
+      },
+      {
+        "id": 7,
+        "code": "24",
+        "name": "Tork",
+        "power": "1,5,5,4"
+      },
+      {
+        "id": 8,
+        "code": "25",
+        "name": "Emuk",
+        "power": "4,4,4,3"
+      },
+      {
+        "id": 9,
+        "code": "31",
+        "name": "Zoomba",
+        "power": "5,5,5,5"
+      },
+      {
+        "id": 10,
+        "code": "32",
+        "name": "Pakkun",
+        "power": "6,5,5,4"
+      },
+      {
+        "id": 11,
+        "code": "33",
+        "name": "Wasp",
+        "power": "4,4,4,8"
+      },
+      {
+        "id": 12,
+        "code": "34",
+        "name": "A'tuin",
+        "power": "3,6,6,5"
+      },
+      {
+        "id": 13,
+        "code": "35",
+        "name": "Spider",
+        "power": "3,7,5,5"
+      },
+      {
+        "id": 14,
+        "code": "36",
+        "name": "Worm",
+        "power": "4,5,8,3"
+      },
+      {
+        "id": 15,
+        "code": "41",
+        "name": "Clink",
+        "power": "7,6,6,6"
+      },
+      {
+        "id": 16,
+        "code": "42",
+        "name": "Kaeris",
+        "power": "5,5,7,8"
+      },
+      {
+        "id": 17,
+        "code": "43",
+        "name": "Dopple",
+        "power": "6,6,6,7"
+      },
+      {
+        "id": 18,
+        "code": "44",
+        "name": "Kefka's Ghost",
+        "power": "5,A,5,5"
+      },
+      {
+        "id": 19,
+        "code": "45",
+        "name": "Undead King",
+        "power": "6,9,5,5"
+      },
+      {
+        "id": 20,
+        "code": "51",
+        "name": "Babamut",
+        "power": "7,7,A,6"
+      },
+      {
+        "id": 21,
+        "code": "52",
+        "name": "Zephyros",
+        "power": "A,5,5,A"
+      },
+      {
+        "id": 22,
+        "code": "61",
+        "name": "The Seed",
+        "power": "9,9,9,8"
+      }
+    ],
+    "areas": [
+      {
+        "id": "WStart",
+        "name": "WStart"
+      },
+      {
+        "id": "WOver",
+        "name": "WOver"
+      },
+      {
+        "id": "WMeadow",
+        "name": "WMeadow"
+      },
+      {
+        "id": "WVillage",
+        "name": "WVillage"
+      },
+      {
+        "id": "WWell",
+        "name": "WWell"
+      },
+      {
+        "id": "WDungeonStart",
+        "name": "WDungeon Start"
+      },
+      {
+        "id": "WDungeon",
+        "name": "WDungeon"
+      },
+      {
+        "id": "WCave",
+        "name": "WCave"
+      },
+      {
+        "id": "WInterior",
+        "name": "WInterior"
+      },
+      {
+        "id": "WMeadow2",
+        "name": "WMeadow2"
+      },
+      {
+        "id": "WCave2",
+        "name": "WCave2"
+      },
+      {
+        "id": "WLimbs",
+        "name": "WLimbs"
+      },
+      {
+        "id": "WVillage2",
+        "name": "WVillage2"
+      },
+      {
+        "id": "WTwoWorlds2D",
+        "name": "WTwo Worlds2 D"
+      },
+      {
+        "id": "WTwoWorlds3D",
+        "name": "WTwo Worlds3 D"
+      },
+      {
+        "id": "WHack",
+        "name": "WHack"
+      },
+      {
+        "id": "WCave2D3D",
+        "name": "WCave2 D3 D"
+      },
+      {
+        "id": "WCave2D3D_2",
+        "name": "WCave2 D3 D 2"
+      },
+      {
+        "id": "WBonusDungeon",
+        "name": "WBonus Dungeon"
+      },
+      {
+        "id": "WBonusSwitch2D",
+        "name": "WBonus Switch2 D"
+      },
+      {
+        "id": "WBonusSwitch3D",
+        "name": "WBonus Switch3 D"
+      },
+      {
+        "id": "WEnd",
+        "name": "WEnd"
+      }
+    ],
+    "loot": [
+      {
+        "id": 0,
+        "name": "Ring of Fire",
+        "slot": "ring"
+      },
+      {
+        "id": 1,
+        "name": "Necklace of the Eagle",
+        "slot": "neck"
+      },
+      {
+        "id": 2,
+        "name": "Wristguards of Geshtar",
+        "slot": "wrists"
+      },
+      {
+        "id": 3,
+        "name": "Belt of Legend",
+        "slot": "waist"
+      },
+      {
+        "id": 4,
+        "name": "Stone Breaker",
+        "slot": "ear"
+      },
+      {
+        "id": 5,
+        "name": "Spirit of Typhon",
+        "slot": "neck"
+      },
+      {
+        "id": 6,
+        "name": "Draak's Armband",
+        "slot": "arms"
+      },
+      {
+        "id": 7,
+        "name": "Ring of Luck",
+        "slot": "ring"
+      },
+      {
+        "id": 8,
+        "name": "Zodiac Earring",
+        "slot": "ear"
+      },
+      {
+        "id": 9,
+        "name": "Kneepads of Arthritus",
+        "slot": "knees"
+      },
+      {
+        "id": 10,
+        "name": "Helmet of Twilight",
+        "slot": "head"
+      },
+      {
+        "id": 11,
+        "name": "Spirit of Adventure",
+        "slot": "ring"
+      },
+      {
+        "id": 12,
+        "name": "Flame Giant's Pinky Cover of the Pony",
+        "slot": "hands"
+      },
+      {
+        "id": 13,
+        "name": "Tyrannical Gladiator's Greaves",
+        "slot": "legs"
+      },
+      {
+        "id": 14,
+        "name": "Boots of Vaal Undersoul",
+        "slot": "feet"
+      },
+      {
+        "id": 15,
+        "name": "Guardian Angel",
+        "slot": "chest"
+      },
+      {
+        "id": 16,
+        "name": "Lightbringer Pauldrons",
+        "slot": "shoulders"
+      },
+      {
+        "id": 17,
+        "name": "Diamond Necklace of Shiny Bling",
+        "slot": "neck"
+      },
+      {
+        "id": 18,
+        "name": "Ring of Bovinae Mastery",
+        "slot": "ring"
+      },
+      {
+        "id": 19,
+        "name": "Underpants of the Unshackable",
+        "slot": "underwear"
+      },
+      {
+        "id": 20,
+        "name": "Hero Relic",
+        "slot": "extra"
+      },
+      {
+        "id": 21,
+        "name": "Medal of Honor",
+        "slot": "extra"
+      },
+      {
+        "id": 22,
+        "name": "Creeper Defuse Kit",
+        "slot": "extra"
+      },
+      {
+        "id": 23,
+        "name": "Sunscreen of the Undead",
+        "slot": "extra"
+      }
+    ],
+    "chest_names": [
+      "Left Key",
+      "2D Movement",
+      "Basic Scrolling",
+      "Smoother Scrolling",
+      "16 Colors Display",
+      "256 Colors Display",
+      "Sounds FX",
+      "Music",
+      "16-Bit Music",
+      "Monsters!",
+      "Sword",
+      "Save Points",
+      "Free Movement",
+      "Mode 7",
+      "Village",
+      "Forced Fight",
+      "Camera Zoom",
+      "Life Hearts",
+      "Mines Opened",
+      "Pressure Plates",
+      "Red Wizard",
+      "Trap Room",
+      "Skeleton",
+      "Maze",
+      "Pushable Block",
+      "Hole",
+      "Left or Right ?",
+      "Whirlwind",
+      "Light Puzzle",
+      "Lava",
+      "Auto Fire",
+      "Sign Panel",
+      "Turn Based Battle",
+      "Pixelated Textures",
+      "HD Textures",
+      "Legendary Sword",
+      "Character Selection",
+      "Places Name",
+      "High-Def User Interface",
+      "Breakable Pots",
+      "Inventory",
+      "Inventory",
+      "Chained Combo Hits",
+      "Life Bar",
+      "Ambient Light",
+      "Dynamic Lighting",
+      "Multiple Kills",
+      "Minimap",
+      "Bow",
+      "First Half of the Amulet",
+      "Second Part of the Amulet",
+      "3D Fights",
+      "Oops!",
+      "Three Dimension World",
+      "Experience Points",
+      "Life Bonus",
+      "Storyline",
+      "3D Mode",
+      "Grow Taller",
+      "Right Key",
+      "Star",
+      "Path Unlocked",
+      "Chest Unlocked",
+      "Overworld",
+      "NPC",
+      "Enter Houses",
+      "Innkeeper",
+      "Shopkeeper",
+      "Secret Place",
+      "Equiped",
+      "Forced Choice",
+      "Name",
+      "Cave Monsters",
+      "Life Fountain",
+      "Something Happened Somewhere",
+      "Something Happened Somewhere",
+      "Something Happened Somewhere",
+      "Boss Anim",
+      "Dimensional Stone Passed",
+      "Door Mechanism",
+      "Key",
+      "Boss Door Key",
+      "Card Players",
+      "Expensive Merchant",
+      "Restless Child",
+      "Bombs",
+      "Time Travel",
+      "Change the Future",
+      "Fast DVD Player",
+      "HD Backgrounds",
+      "Member Leave Party",
+      "$name",
+      "Card Champion",
+      "Master Collector",
+      "Town Portal",
+      "Awaken Power",
+      "Exterminator",
+      "Sniper",
+      "Takoyaki",
+      "Full Metal",
+      "Drama",
+      "Airship",
+      "Choboko Hunter",
+      "Bonus Heart",
+      "Annoying Sound",
+      "Star of Evoland",
+      "Superstar of Evoland",
+      "Megastar of Evoland",
+      "Card player",
+      "Card Collector",
+      "Undertaker",
+      "Turtle Soup",
+      "Heavy purse",
+      "Hoarder",
+      "It was an accident",
+      "Excavations",
+      "Time traveller",
+      "Dodgeball",
+      "True explorer",
+      "Dungeon Crawler",
+      "Cartographer",
+      "Hero",
+      "Pre-Rendered Backgrounds"
+    ]
+  },
+  "Evo2": {
+    "items": [
+      {
+        "id": "Sword",
+        "name": "Old Sword",
+        "category": "Weapon",
+        "attack": 0,
+        "defense": 0,
+        "price": 100
+      },
+      {
+        "id": "VillageKey",
+        "name": "Key to the old house",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Gravity",
+        "name": "Gravity",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "SewersKey",
+        "name": "Key to the sewers",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "SewersGem",
+        "name": "Strange Gem",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Bonbon",
+        "name": "Candy that's been licked",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "LuckyCharm",
+        "name": "Lucky charm",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Something",
+        "name": "Rare Gem",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Badge",
+        "name": "Loyalty Badge",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Pass",
+        "name": "Pass of safe conduct",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "LibKey",
+        "name": "Key to the Library",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Book",
+        "name": "50 Drinking Games",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Star",
+        "name": "Collectible Star",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Catakey",
+        "name": "Strange Gem",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "BronzeSword",
+        "name": "Bronze Sword",
+        "category": "Weapon",
+        "attack": 5,
+        "defense": 0,
+        "price": 200
+      },
+      {
+        "id": "BronzeArmor",
+        "name": "Bronze Armor",
+        "category": "Armor",
+        "attack": 0,
+        "defense": 4,
+        "price": 250
+      },
+      {
+        "id": "SmugBelt",
+        "name": "Smug Belt",
+        "category": "Belt",
+        "attack": 0,
+        "defense": 2,
+        "price": 100
+      },
+      {
+        "id": "SmugBoots",
+        "name": "Smug Boots",
+        "category": "Boots",
+        "attack": 0,
+        "defense": 2,
+        "price": 150
+      },
+      {
+        "id": "SteelSword",
+        "name": "Steel Sword",
+        "category": "Weapon",
+        "attack": 8,
+        "defense": 0,
+        "price": 400
+      },
+      {
+        "id": "SteelBelt",
+        "name": "Steel Belt",
+        "category": "Belt",
+        "attack": 0,
+        "defense": 4,
+        "price": 150
+      },
+      {
+        "id": "SteelBoots",
+        "name": "Steel Boots",
+        "category": "Boots",
+        "attack": 0,
+        "defense": 4,
+        "price": 200
+      },
+      {
+        "id": "VikingSword",
+        "name": "Wiking Sword",
+        "category": "Weapon",
+        "attack": 12,
+        "defense": 0,
+        "price": 1200
+      },
+      {
+        "id": "VikingArmor",
+        "name": "Wiking Armor",
+        "category": "Armor",
+        "attack": 0,
+        "defense": 8,
+        "price": 800
+      },
+      {
+        "id": "VikingBoots",
+        "name": "Wiking Boots",
+        "category": "Boots",
+        "attack": 0,
+        "defense": 6,
+        "price": 300
+      },
+      {
+        "id": "WindSword",
+        "name": "Wind Sword",
+        "category": "Weapon",
+        "attack": 14,
+        "defense": 0,
+        "price": 2000
+      },
+      {
+        "id": "GoldBonus",
+        "name": "Lucky Necklace",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 500
+      },
+      {
+        "id": "Bombs",
+        "name": "Bombs",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "SuperBombs",
+        "name": "Super-Bomb",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MissingRail",
+        "name": "Missing Rail",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "TimeStone",
+        "name": "Stone of Time",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Boat",
+        "name": "Wonderful Boat",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "ChildKey",
+        "name": "Key from the children",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "NESPad",
+        "name": "Control Terminal",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "LoveLetter",
+        "name": "Love Letter",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "LoveProof",
+        "name": "Tinder profile",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "PirateFlag",
+        "name": "Pirate Flag",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MagiKey1",
+        "name": "Fragment of Fire",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "IceBook",
+        "name": "Book of Boreas",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MagiKey2",
+        "name": "Fragment of Ice",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MagiKey3",
+        "name": "Fragment of Nature",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "SylveTear",
+        "name": "Sylph's Tear",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Mineral",
+        "name": "Orikon Ore",
+        "category": "Material",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Wing",
+        "name": "Flying Wing",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Radar",
+        "name": "Everything under the Sun-dar",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 3000
+      },
+      {
+        "id": "WingBroken",
+        "name": "Prototype-X01",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MagiKey4",
+        "name": "Fragment of Earth",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MagiKey5",
+        "name": "Fragment of Time",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Whisky",
+        "name": "Old Whisky",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Tea",
+        "name": "Flavored Tea",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Sugar",
+        "name": "Sugar",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "DalkinKey",
+        "name": "Key to your house",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "DalkinMedal",
+        "name": "Imperial Medal",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Energy",
+        "name": "Maana",
+        "category": "Material",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "GreenGoo",
+        "name": "Green Goop",
+        "category": "Material",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "RedGoo",
+        "name": "Red Goop",
+        "category": "Material",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "Card",
+        "name": "Card",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "GreenPotion",
+        "name": "Green Potion",
+        "category": "Consumable",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "RedPotion",
+        "name": "Red Potion",
+        "category": "Consumable",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "SteelArmor",
+        "name": "Steel Armor",
+        "category": "Armor",
+        "attack": 0,
+        "defense": 6,
+        "price": 600
+      },
+      {
+        "id": "LastSword",
+        "name": "Orikon Sword",
+        "category": "Weapon",
+        "attack": 16,
+        "defense": 0,
+        "price": 4
+      },
+      {
+        "id": "LastArmor",
+        "name": "Orikon Armor",
+        "category": "Armor",
+        "attack": 0,
+        "defense": 10,
+        "price": 5
+      },
+      {
+        "id": "LastBoots",
+        "name": "Orikon Boots",
+        "category": "Boots",
+        "attack": 0,
+        "defense": 8,
+        "price": 3
+      },
+      {
+        "id": "LastBelt",
+        "name": "Orikon Belt",
+        "category": "Belt",
+        "attack": 0,
+        "defense": 5,
+        "price": 2
+      },
+      {
+        "id": "ModeShoot",
+        "name": "Shoot 'em up Mode",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "ModeFight",
+        "name": "Fighting Game Mode",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "ModeLabo",
+        "name": "Active Time Battle Mode",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "ModeTactics",
+        "name": "Tactical RPG Mode",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "ModeBeat",
+        "name": "Beat 'em all Mode",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "ModeGuitar",
+        "name": "Rhythm Game Mode",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "IngrA",
+        "name": "Golden Apple",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "IngrB",
+        "name": "Cheeseless Pizza",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "IngrC",
+        "name": "Mammut Steak",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "WingTravel",
+        "name": "Temporal Module",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      },
+      {
+        "id": "MagusKey",
+        "name": "Magus' key",
+        "category": "Other",
+        "attack": 0,
+        "defense": 0,
+        "price": 0
+      }
+    ],
+    "cards": [
+      {
+        "id": "kuro",
+        "name": "Kuro",
+        "cost": 7,
+        "attack": 5,
+        "life": 10
+      },
+      {
+        "id": "fina",
+        "name": "Fina",
+        "cost": 5,
+        "attack": 2,
+        "life": 8
+      },
+      {
+        "id": "velvet",
+        "name": "Velvet",
+        "cost": 4,
+        "attack": 3,
+        "life": 8
+      },
+      {
+        "id": "menos",
+        "name": "Menos",
+        "cost": 8,
+        "attack": 5,
+        "life": 9
+      },
+      {
+        "id": "ceres",
+        "name": "Ceres",
+        "cost": 9,
+        "attack": 9,
+        "life": 9
+      },
+      {
+        "id": "dalkin",
+        "name": "Dalkin",
+        "cost": 8,
+        "attack": 7,
+        "life": 8
+      },
+      {
+        "id": "emperor",
+        "name": "Emperor Lothair",
+        "cost": 6,
+        "attack": 6,
+        "life": 7
+      },
+      {
+        "id": "largo",
+        "name": "Largo LeGrand",
+        "cost": 4,
+        "attack": 2,
+        "life": 3
+      },
+      {
+        "id": "demonking",
+        "name": "Demon King Arthus",
+        "cost": 7,
+        "attack": 5,
+        "life": 7
+      },
+      {
+        "id": "nawy",
+        "name": "Nawy",
+        "cost": 0,
+        "attack": 0,
+        "life": 3
+      },
+      {
+        "id": "manatree",
+        "name": "Yoda Tree",
+        "cost": 3,
+        "attack": 0,
+        "life": 12
+      },
+      {
+        "id": "weapon",
+        "name": "Weapon",
+        "cost": 9,
+        "attack": 12,
+        "life": 2
+      },
+      {
+        "id": "giro",
+        "name": "Professor Giro",
+        "cost": 6,
+        "attack": 5,
+        "life": 3
+      },
+      {
+        "id": "lembrouil",
+        "name": "Mr. Mudwell",
+        "cost": 2,
+        "attack": 0,
+        "life": 10
+      },
+      {
+        "id": "roberts",
+        "name": "Pirate Roberts",
+        "cost": 6,
+        "attack": 5,
+        "life": 7
+      },
+      {
+        "id": "force1",
+        "name": "Blue Task Force",
+        "cost": 1,
+        "attack": 0,
+        "life": 2
+      },
+      {
+        "id": "force2",
+        "name": "Green Task Force",
+        "cost": 1,
+        "attack": 0,
+        "life": 2
+      },
+      {
+        "id": "force3",
+        "name": "Red Task Force",
+        "cost": 1,
+        "attack": 0,
+        "life": 2
+      },
+      {
+        "id": "blacksmith",
+        "name": "Legendary Blacksmith",
+        "cost": 2,
+        "attack": 1,
+        "life": 6
+      },
+      {
+        "id": "inventeur",
+        "name": "Inventor",
+        "cost": 2,
+        "attack": 2,
+        "life": 2
+      },
+      {
+        "id": "manimal",
+        "name": "Manimal",
+        "cost": 0,
+        "attack": 1,
+        "life": 1
+      },
+      {
+        "id": "johnsnow",
+        "name": "John Snow",
+        "cost": 5,
+        "attack": 4,
+        "life": 5
+      },
+      {
+        "id": "reno",
+        "name": "Reno",
+        "cost": 7,
+        "attack": 5,
+        "life": 8
+      },
+      {
+        "id": "cherry",
+        "name": "Cherry",
+        "cost": 6,
+        "attack": 4,
+        "life": 6
+      },
+      {
+        "id": "plum",
+        "name": "Plum",
+        "cost": 6,
+        "attack": 4,
+        "life": 6
+      },
+      {
+        "id": "magus",
+        "name": "Great Magus",
+        "cost": 9,
+        "attack": 10,
+        "life": 3
+      },
+      {
+        "id": "jabba",
+        "name": "Jabba",
+        "cost": 7,
+        "attack": 5,
+        "life": 8
+      },
+      {
+        "id": "lieutenant",
+        "name": "Lieutenant",
+        "cost": 8,
+        "attack": 6,
+        "life": 10
+      },
+      {
+        "id": "prophet",
+        "name": "Prophet",
+        "cost": 9,
+        "attack": 8,
+        "life": 7
+      },
+      {
+        "id": "bigthing",
+        "name": "Flying Guardian",
+        "cost": 13,
+        "attack": 10,
+        "life": 18
+      },
+      {
+        "id": "darkkuro",
+        "name": "Darkkuro",
+        "cost": 7,
+        "attack": 5,
+        "life": 8
+      },
+      {
+        "id": "shooter1",
+        "name": "Biblus",
+        "cost": 7,
+        "attack": 5,
+        "life": 7
+      },
+      {
+        "id": "shooter2",
+        "name": "Saxu",
+        "cost": 7,
+        "attack": 5,
+        "life": 7
+      },
+      {
+        "id": "shooter3",
+        "name": "Scizor",
+        "cost": 6,
+        "attack": 6,
+        "life": 5
+      },
+      {
+        "id": "guardian",
+        "name": "Forest Guardian",
+        "cost": 4,
+        "attack": 3,
+        "life": 4
+      },
+      {
+        "id": "abobo",
+        "name": "Captain Ababa",
+        "cost": 10,
+        "attack": 9,
+        "life": 9
+      },
+      {
+        "id": "trollvicieux",
+        "name": "Big Vicious Troll",
+        "cost": 7,
+        "attack": 7,
+        "life": 7
+      },
+      {
+        "id": "sylves",
+        "name": "Sylph",
+        "cost": 2,
+        "attack": 1,
+        "life": 2
+      },
+      {
+        "id": "vikings",
+        "name": "Wiking",
+        "cost": 4,
+        "attack": 2,
+        "life": 3
+      },
+      {
+        "id": "demons",
+        "name": "Demon",
+        "cost": 3,
+        "attack": 3,
+        "life": 2
+      },
+      {
+        "id": "librarian",
+        "name": "Dean of the Library",
+        "cost": 1,
+        "attack": 0,
+        "life": 6
+      },
+      {
+        "id": "antik",
+        "name": "Magi",
+        "cost": 0,
+        "attack": 0,
+        "life": 4
+      },
+      {
+        "id": "pirate",
+        "name": "Pirate",
+        "cost": 4,
+        "attack": 3,
+        "life": 3
+      },
+      {
+        "id": "troll",
+        "name": "Noria Troll",
+        "cost": 5,
+        "attack": 4,
+        "life": 5
+      },
+      {
+        "id": "robot",
+        "name": "C4PO",
+        "cost": 4,
+        "attack": 2,
+        "life": 5
+      },
+      {
+        "id": "slime",
+        "name": "Blob",
+        "cost": 1,
+        "attack": 1,
+        "life": 1
+      },
+      {
+        "id": "rat",
+        "name": "Rat",
+        "cost": 2,
+        "attack": 2,
+        "life": 1
+      },
+      {
+        "id": "eyeblob",
+        "name": "Eye Blob",
+        "cost": 2,
+        "attack": 3,
+        "life": 1
+      },
+      {
+        "id": "sorcerer",
+        "name": "Sorcerer",
+        "cost": 4,
+        "attack": 4,
+        "life": 2
+      },
+      {
+        "id": "ghost",
+        "name": "Ghost",
+        "cost": 3,
+        "attack": 2,
+        "life": 5
+      },
+      {
+        "id": "armor",
+        "name": "Armos",
+        "cost": 4,
+        "attack": 1,
+        "life": 10
+      },
+      {
+        "id": "bat",
+        "name": "Bat",
+        "cost": 1,
+        "attack": 1,
+        "life": 2
+      },
+      {
+        "id": "mushroom",
+        "name": "Madcap",
+        "cost": 3,
+        "attack": 2,
+        "life": 2
+      },
+      {
+        "id": "squirrel",
+        "name": "Squirrel",
+        "cost": 2,
+        "attack": 1,
+        "life": 2
+      },
+      {
+        "id": "guard",
+        "name": "Imperial Guard",
+        "cost": 2,
+        "attack": 1,
+        "life": 2
+      },
+      {
+        "id": "bear",
+        "name": "Grizzly",
+        "cost": 4,
+        "attack": 3,
+        "life": 3
+      },
+      {
+        "id": "ninja",
+        "name": "Ninja Squirrel",
+        "cost": 4,
+        "attack": 3,
+        "life": 3
+      },
+      {
+        "id": "bigrock",
+        "name": "Mayenne Boulder",
+        "cost": 3,
+        "attack": 0,
+        "life": 11
+      },
+      {
+        "id": "mammut",
+        "name": "Mammut",
+        "cost": 3,
+        "attack": 1,
+        "life": 8
+      },
+      {
+        "id": "breaker",
+        "name": "Crusher",
+        "cost": 5,
+        "attack": 5,
+        "life": 1
+      },
+      {
+        "id": "developer",
+        "name": "Programmer Art",
+        "cost": 4,
+        "attack": 5,
+        "life": 5
+      }
+    ],
+    "areas": [
+      {
+        "id": "WorldMap",
+        "name": "World Map",
+        "variants": [
+          {
+            "time": 0,
+            "width": 90,
+            "height": 75,
+            "anchors": [
+              {
+                "id": "Demonia8Begin",
+                "x": 20,
+                "y": 7
+              },
+              {
+                "id": "Demonia5End",
+                "x": 24,
+                "y": 7
+              },
+              {
+                "id": "Demonia5Begin",
+                "x": 26,
+                "y": 7
+              },
+              {
+                "id": "Demonia31",
+                "x": 30,
+                "y": 7
+              },
+              {
+                "id": "demoniaMagi",
+                "x": 36,
+                "y": 10
+              },
+              {
+                "id": "Demonia3End",
+                "x": 28,
+                "y": 11
+              },
+              {
+                "id": "Demonia3Begin",
+                "x": 30,
+                "y": 11
+              },
+              {
+                "id": "Demonia0End",
+                "x": 34,
+                "y": 12
+              },
+              {
+                "id": "Demonia0Begin",
+                "x": 36,
+                "y": 12
+              },
+              {
+                "id": "Demonia9Begin",
+                "x": 15,
+                "y": 13
+              },
+              {
+                "id": "Demonia1End",
+                "x": 32,
+                "y": 13
+              },
+              {
+                "id": "Demonia1Begin",
+                "x": 34,
+                "y": 13
+              },
+              {
+                "id": "Demonia11End",
+                "x": 30,
+                "y": 15
+              },
+              {
+                "id": "Demonia11Begin",
+                "x": 32,
+                "y": 15
+              },
+              {
+                "id": "Demonia6End",
+                "x": 18,
+                "y": 16
+              },
+              {
+                "id": "Demonia6Begin",
+                "x": 20,
+                "y": 16
+              },
+              {
+                "id": "Demonia2End",
+                "x": 27,
+                "y": 17
+              },
+              {
+                "id": "Demonia2Begin",
+                "x": 29,
+                "y": 17
+              },
+              {
+                "id": "demonCamp",
+                "x": 49,
+                "y": 19
+              },
+              {
+                "id": "Demonia4End",
+                "x": 22,
+                "y": 20
+              },
+              {
+                "id": "Demonia4Begin",
+                "x": 24,
+                "y": 20
+              },
+              {
+                "id": "Demonia7Begin",
+                "x": 17,
+                "y": 22
+              },
+              {
+                "id": "ghostForestColision",
+                "x": 47,
+                "y": 24
+              },
+              {
+                "id": "ghostExit",
+                "x": 47,
+                "y": 24
+              },
+              {
+                "id": "nakomi",
+                "x": 36,
+                "y": 25
+              },
+              {
+                "id": "ghostEnter",
+                "x": 46,
+                "y": 26
+              },
+              {
+                "id": "northBridgeNorth",
+                "x": 50,
+                "y": 30
+              },
+              {
+                "id": "bigThing",
+                "x": 6,
+                "y": 31
+              },
+              {
+                "id": "portal",
+                "x": 46,
+                "y": 31
+              },
+              {
+                "id": "northBridgeSouth",
+                "x": 50,
+                "y": 32
+              },
+              {
+                "id": "mine",
+                "x": 36,
+                "y": 33
+              },
+              {
+                "id": "meadow",
+                "x": 47,
+                "y": 33
+              },
+              {
+                "id": "harborLeft",
+                "x": 54,
+                "y": 36
+              },
+              {
+                "id": "harborLeave",
+                "x": 57,
+                "y": 36
+              },
+              {
+                "id": "capital",
+                "x": 50,
+                "y": 37
+              },
+              {
+                "id": "leaveIsland",
+                "x": 67,
+                "y": 38
+              },
+              {
+                "id": "MenosIslandOut",
+                "x": 85,
+                "y": 41
+              },
+              {
+                "id": "wind",
+                "x": 53,
+                "y": 43
+              },
+              {
+                "id": "LaboEntrance",
+                "x": 39,
+                "y": 46
+              },
+              {
+                "id": "mountainNorth",
+                "x": 48,
+                "y": 46
+              },
+              {
+                "id": "colGrizzliColision",
+                "x": 47,
+                "y": 47
+              },
+              {
+                "id": "mountainPass",
+                "x": 47,
+                "y": 49
+              },
+              {
+                "id": "forest",
+                "x": 39,
+                "y": 52
+              },
+              {
+                "id": "firstVillageNorth",
+                "x": 39,
+                "y": 54
+              },
+              {
+                "id": "firstVillageSouth",
+                "x": 41,
+                "y": 55
+              },
+              {
+                "id": "vikingTunel",
+                "x": 50,
+                "y": 60
+              },
+              {
+                "id": "ncave",
+                "x": 50,
+                "y": 60
+              },
+              {
+                "id": "icyCavern",
+                "x": 65,
+                "y": 62
+              },
+              {
+                "id": "sylves",
+                "x": 22,
+                "y": 64
+              },
+              {
+                "id": "vikingVillage",
+                "x": 57,
+                "y": 68
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 90,
+            "height": 75,
+            "anchors": [
+              {
+                "id": "demoniaMagi",
+                "x": 36,
+                "y": 10
+              },
+              {
+                "id": "demoniaRuins",
+                "x": 15,
+                "y": 13
+              },
+              {
+                "id": "foreland",
+                "x": 49,
+                "y": 18
+              },
+              {
+                "id": "ghostExit",
+                "x": 47,
+                "y": 23
+              },
+              {
+                "id": "ghostForestColision",
+                "x": 47,
+                "y": 24
+              },
+              {
+                "id": "ghostEnter",
+                "x": 47,
+                "y": 25
+              },
+              {
+                "id": "phideout",
+                "x": 81,
+                "y": 27
+              },
+              {
+                "id": "northBridgeNorth",
+                "x": 50,
+                "y": 30
+              },
+              {
+                "id": "portal",
+                "x": 46,
+                "y": 31
+              },
+              {
+                "id": "northBridgeSouth",
+                "x": 50,
+                "y": 32
+              },
+              {
+                "id": "meadow",
+                "x": 47,
+                "y": 33
+              },
+              {
+                "id": "mine",
+                "x": 36,
+                "y": 34
+              },
+              {
+                "id": "harborLeft",
+                "x": 54,
+                "y": 36
+              },
+              {
+                "id": "harborLeave",
+                "x": 57,
+                "y": 36
+              },
+              {
+                "id": "capital",
+                "x": 50,
+                "y": 37
+              },
+              {
+                "id": "leaveIsland",
+                "x": 67,
+                "y": 38
+              },
+              {
+                "id": "windvalley",
+                "x": 53,
+                "y": 43
+              },
+              {
+                "id": "labo",
+                "x": 39,
+                "y": 46
+              },
+              {
+                "id": "forest",
+                "x": 39,
+                "y": 52
+              },
+              {
+                "id": "firstVillageNorth",
+                "x": 39,
+                "y": 53
+              },
+              {
+                "id": "firstVillageSouth",
+                "x": 41,
+                "y": 54
+              },
+              {
+                "id": "sylves",
+                "x": 22,
+                "y": 63
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 140,
+            "height": 90,
+            "anchors": [
+              {
+                "id": "lockTop",
+                "x": 0,
+                "y": 14
+              },
+              {
+                "id": "lockLeft",
+                "x": 28,
+                "y": 14
+              },
+              {
+                "id": "lockRight",
+                "x": 115,
+                "y": 14
+              },
+              {
+                "id": "chicken",
+                "x": 104,
+                "y": 23
+              },
+              {
+                "id": "demoniaMagi",
+                "x": 62,
+                "y": 25
+              },
+              {
+                "id": "dtemple",
+                "x": 41,
+                "y": 30
+              },
+              {
+                "id": "foreland",
+                "x": 73,
+                "y": 33
+              },
+              {
+                "id": "ghostForest",
+                "x": 71,
+                "y": 39
+              },
+              {
+                "id": "fortuneCamp",
+                "x": 76,
+                "y": 40
+              },
+              {
+                "id": "northBridgeNorth",
+                "x": 75,
+                "y": 45
+              },
+              {
+                "id": "northBridgeSouth",
+                "x": 75,
+                "y": 47
+              },
+              {
+                "id": "landPyramid",
+                "x": 60,
+                "y": 48
+              },
+              {
+                "id": "mine",
+                "x": 62,
+                "y": 48
+              },
+              {
+                "id": "meadow",
+                "x": 71,
+                "y": 48
+              },
+              {
+                "id": "boat",
+                "x": 81,
+                "y": 49
+              },
+              {
+                "id": "leaveIsland",
+                "x": 92,
+                "y": 50
+              },
+              {
+                "id": "harborLeft",
+                "x": 78,
+                "y": 51
+              },
+              {
+                "id": "harborLeave",
+                "x": 82,
+                "y": 51
+              },
+              {
+                "id": "capital",
+                "x": 74,
+                "y": 52
+              },
+              {
+                "id": "patrolCenter",
+                "x": 50,
+                "y": 53
+              },
+              {
+                "id": "Windvalley",
+                "x": 78,
+                "y": 58
+              },
+              {
+                "id": "laboExit",
+                "x": 63,
+                "y": 59
+              },
+              {
+                "id": "smugView",
+                "x": 66,
+                "y": 60
+              },
+              {
+                "id": "exitGlitch",
+                "x": 64,
+                "y": 66
+              },
+              {
+                "id": "afterBig",
+                "x": 69,
+                "y": 67
+              },
+              {
+                "id": "village",
+                "x": 66,
+                "y": 71
+              },
+              {
+                "id": "icyCavern",
+                "x": 89,
+                "y": 75
+              },
+              {
+                "id": "sylves",
+                "x": 46,
+                "y": 76
+              }
+            ],
+            "events": [
+              "showSmug"
+            ]
+          },
+          {
+            "time": 3,
+            "width": 90,
+            "height": 75,
+            "anchors": [
+              {
+                "id": "exitCenter",
+                "x": 15,
+                "y": 12
+              },
+              {
+                "id": "volcano",
+                "x": 81,
+                "y": 24
+              },
+              {
+                "id": "magiIsland",
+                "x": 67,
+                "y": 38
+              },
+              {
+                "id": "exitGlitch",
+                "x": 40,
+                "y": 39
+              },
+              {
+                "id": "glitchCenter",
+                "x": 40,
+                "y": 46
+              },
+              {
+                "id": "centerIsland",
+                "x": 49,
+                "y": 48
+              },
+              {
+                "id": "library",
+                "x": 65,
+                "y": 61
+              },
+              {
+                "id": "sylves",
+                "x": 22,
+                "y": 64
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "FirstVillage",
+        "name": "Clearing | Nibiru Village",
+        "variants": [
+          {
+            "time": 1,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "forest",
+                "x": 41,
+                "y": 5
+              },
+              {
+                "id": "ruin",
+                "x": 65,
+                "y": 11
+              },
+              {
+                "id": "woodCutter",
+                "x": 25,
+                "y": 24
+              },
+              {
+                "id": "finaHouse",
+                "x": 56,
+                "y": 34
+              },
+              {
+                "id": "mapExitRight",
+                "x": 77,
+                "y": 35
+              },
+              {
+                "id": "shop",
+                "x": 20,
+                "y": 36
+              },
+              {
+                "id": "inn",
+                "x": 30,
+                "y": 36
+              },
+              {
+                "id": "ending",
+                "x": 52,
+                "y": 36
+              },
+              {
+                "id": "east",
+                "x": 82,
+                "y": 37
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 0,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "forest",
+                "x": 25,
+                "y": 4
+              },
+              {
+                "id": "south",
+                "x": 44,
+                "y": 22
+              }
+            ],
+            "events": [
+              "finaSearchVillage"
+            ]
+          },
+          {
+            "time": 2,
+            "width": 75,
+            "height": 75,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 56,
+                "y": 35
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "FirstVillageInterior",
+        "name": "First Village Interior",
+        "variants": [
+          {
+            "time": 1,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "shop",
+                "x": 12,
+                "y": 14
+              },
+              {
+                "id": "inn",
+                "x": 42,
+                "y": 15
+              },
+              {
+                "id": "woodCutter",
+                "x": 74,
+                "y": 16
+              },
+              {
+                "id": "zoneChest",
+                "x": 35,
+                "y": 24
+              },
+              {
+                "id": "monsters",
+                "x": 39,
+                "y": 32
+              },
+              {
+                "id": "finaHouse",
+                "x": 14,
+                "y": 34
+              },
+              {
+                "id": "ruin",
+                "x": 40,
+                "y": 45
+              }
+            ],
+            "events": [
+              "start"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Forest",
+        "name": "Spelbuk Forest",
+        "variants": [
+          {
+            "time": 1,
+            "width": 150,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "magilith",
+                "x": 83,
+                "y": 14
+              },
+              {
+                "id": "magFront",
+                "x": 82,
+                "y": 16
+              },
+              {
+                "id": "reno",
+                "x": 83,
+                "y": 16
+              },
+              {
+                "id": "ending",
+                "x": 83,
+                "y": 20
+              },
+              {
+                "id": "hide1",
+                "x": 82,
+                "y": 31
+              },
+              {
+                "id": "hide2",
+                "x": 85,
+                "y": 32
+              },
+              {
+                "id": "lock",
+                "x": 83,
+                "y": 34
+              },
+              {
+                "id": "enter",
+                "x": 87,
+                "y": 102
+              }
+            ],
+            "events": [
+              "helpFina",
+              "meetReno"
+            ]
+          },
+          {
+            "time": 0,
+            "width": 80,
+            "height": 80,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 46,
+                "y": 13
+              },
+              {
+                "id": "start",
+                "x": 49,
+                "y": 68
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MountainPass",
+        "name": "Grizzly Pass",
+        "variants": [
+          {
+            "time": 0,
+            "width": 100,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "spawn",
+                "x": 30,
+                "y": 0
+              },
+              {
+                "id": "sstop",
+                "x": 18,
+                "y": 1
+              },
+              {
+                "id": "lock2",
+                "x": 29,
+                "y": 1
+              },
+              {
+                "id": "north",
+                "x": 30,
+                "y": 1
+              },
+              {
+                "id": "lock2",
+                "x": 30,
+                "y": 2
+              },
+              {
+                "id": "run",
+                "x": 30,
+                "y": 3
+              },
+              {
+                "id": "dead",
+                "x": 30,
+                "y": 9
+              },
+              {
+                "id": "mamutZone",
+                "x": 55,
+                "y": 12
+              },
+              {
+                "id": "lock",
+                "x": 27,
+                "y": 15
+              },
+              {
+                "id": "ending",
+                "x": 56,
+                "y": 51
+              },
+              {
+                "id": "west",
+                "x": 4,
+                "y": 103
+              }
+            ],
+            "events": [
+              "mamut",
+              "runningGirl"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Jail",
+        "name": "Jail",
+        "variants": [
+          {
+            "time": 0,
+            "width": 300,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "exitCol",
+                "x": 237,
+                "y": 0
+              },
+              {
+                "id": "zoneChest1",
+                "x": 160,
+                "y": 2
+              },
+              {
+                "id": "zoneChest2",
+                "x": 4,
+                "y": 3
+              },
+              {
+                "id": "enter",
+                "x": 191,
+                "y": 4
+              },
+              {
+                "id": "finalGuard",
+                "x": 238,
+                "y": 5
+              },
+              {
+                "id": "swordSpawn",
+                "x": 239,
+                "y": 8
+              },
+              {
+                "id": "fallZone",
+                "x": 280,
+                "y": 15
+              },
+              {
+                "id": "menosPos",
+                "x": 281,
+                "y": 16
+              },
+              {
+                "id": "ending",
+                "x": 191,
+                "y": 19
+              },
+              {
+                "id": "fromCol",
+                "x": 280,
+                "y": 27
+              },
+              {
+                "id": "hit",
+                "x": 134,
+                "y": 32
+              },
+              {
+                "id": "hit",
+                "x": 138,
+                "y": 32
+              },
+              {
+                "id": "hit",
+                "x": 129,
+                "y": 33
+              },
+              {
+                "id": "hit",
+                "x": 131,
+                "y": 33
+              },
+              {
+                "id": "hall",
+                "x": 238,
+                "y": 33
+              },
+              {
+                "id": "hit",
+                "x": 129,
+                "y": 38
+              },
+              {
+                "id": "hit",
+                "x": 138,
+                "y": 38
+              },
+              {
+                "id": "hit",
+                "x": 131,
+                "y": 39
+              },
+              {
+                "id": "hit",
+                "x": 134,
+                "y": 39
+              }
+            ],
+            "events": [
+              "fina2",
+              "jailBoxEnd",
+              "jailWakeup"
+            ]
+          },
+          {
+            "time": 1,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "secretScrollStop",
+                "x": 17,
+                "y": 9
+              },
+              {
+                "id": "wallMenosLeft",
+                "x": 32,
+                "y": 10
+              },
+              {
+                "id": "wallMenosRight",
+                "x": 34,
+                "y": 10
+              },
+              {
+                "id": "exit",
+                "x": 49,
+                "y": 12
+              },
+              {
+                "id": "waterView",
+                "x": 27,
+                "y": 24
+              },
+              {
+                "id": "start",
+                "x": 10,
+                "y": 66
+              },
+              {
+                "id": "p1",
+                "x": 11,
+                "y": 69
+              }
+            ],
+            "events": [
+              "enter",
+              "waterZone"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Colosseum",
+        "name": "Colosseum",
+        "variants": [
+          {
+            "time": 0,
+            "width": 30,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "left",
+                "x": 10,
+                "y": 6
+              },
+              {
+                "id": "emp",
+                "x": 15,
+                "y": 6
+              },
+              {
+                "id": "right",
+                "x": 19,
+                "y": 6
+              },
+              {
+                "id": "spawn",
+                "x": 10,
+                "y": 10
+              },
+              {
+                "id": "center",
+                "x": 14,
+                "y": 14
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Sewers",
+        "name": "Genova Sewers",
+        "variants": [
+          {
+            "time": 0,
+            "width": 500,
+            "height": 300,
+            "anchors": [
+              {
+                "id": "gravity",
+                "x": 194,
+                "y": 69
+              },
+              {
+                "id": "part2",
+                "x": 237,
+                "y": 123
+              },
+              {
+                "id": "out",
+                "x": 419,
+                "y": 265
+              },
+              {
+                "id": "entry",
+                "x": 317,
+                "y": 276
+              },
+              {
+                "id": "ending",
+                "x": 400,
+                "y": 279
+              }
+            ],
+            "events": [
+              "jump"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Capital",
+        "name": "Genova",
+        "variants": [
+          {
+            "time": 0,
+            "width": 55,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "sewersOut",
+                "x": 16,
+                "y": 8
+              },
+              {
+                "id": "ending",
+                "x": 23,
+                "y": 10
+              },
+              {
+                "id": "cache5",
+                "x": 39,
+                "y": 11
+              },
+              {
+                "id": "sorcer",
+                "x": 37,
+                "y": 17
+              },
+              {
+                "id": "cache6",
+                "x": 6,
+                "y": 22
+              },
+              {
+                "id": "innU",
+                "x": 23,
+                "y": 24
+              },
+              {
+                "id": "cache7",
+                "x": 21,
+                "y": 25
+              },
+              {
+                "id": "cache4",
+                "x": 39,
+                "y": 27
+              },
+              {
+                "id": "cache9",
+                "x": 42,
+                "y": 32
+              },
+              {
+                "id": "cache8",
+                "x": 37,
+                "y": 33
+              },
+              {
+                "id": "entrance",
+                "x": 31,
+                "y": 39
+              },
+              {
+                "id": "front",
+                "x": 31,
+                "y": 47
+              }
+            ],
+            "events": [
+              "enterCapital",
+              "exitCapital"
+            ]
+          },
+          {
+            "time": 2,
+            "width": 150,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "library",
+                "x": 102,
+                "y": 65
+              },
+              {
+                "id": "prison",
+                "x": 32,
+                "y": 66
+              },
+              {
+                "id": "guards",
+                "x": 52,
+                "y": 66
+              },
+              {
+                "id": "innOut",
+                "x": 68,
+                "y": 76
+              },
+              {
+                "id": "house6",
+                "x": 32,
+                "y": 84
+              },
+              {
+                "id": "shop",
+                "x": 46,
+                "y": 84
+              },
+              {
+                "id": "innL",
+                "x": 64,
+                "y": 86
+              },
+              {
+                "id": "innR",
+                "x": 76,
+                "y": 86
+              },
+              {
+                "id": "resto",
+                "x": 91,
+                "y": 86
+              },
+              {
+                "id": "house1",
+                "x": 100,
+                "y": 86
+              },
+              {
+                "id": "house5",
+                "x": 56,
+                "y": 98
+              },
+              {
+                "id": "nobleHouse",
+                "x": 70,
+                "y": 103
+              },
+              {
+                "id": "house3",
+                "x": 91,
+                "y": 104
+              },
+              {
+                "id": "house2",
+                "x": 97,
+                "y": 104
+              },
+              {
+                "id": "house4",
+                "x": 52,
+                "y": 110
+              },
+              {
+                "id": "lowL",
+                "x": 81,
+                "y": 120
+              },
+              {
+                "id": "lowR",
+                "x": 84,
+                "y": 120
+              },
+              {
+                "id": "front",
+                "x": 82,
+                "y": 145
+              }
+            ],
+            "events": [
+              "nearLibrary"
+            ]
+          },
+          {
+            "time": 1,
+            "width": 120,
+            "height": 120,
+            "anchors": [
+              {
+                "id": "library",
+                "x": 79,
+                "y": 55
+              },
+              {
+                "id": "exitDD",
+                "x": 49,
+                "y": 56
+              },
+              {
+                "id": "jail",
+                "x": 34,
+                "y": 57
+              },
+              {
+                "id": "secrethouse",
+                "x": 28,
+                "y": 61
+              },
+              {
+                "id": "guardhouse",
+                "x": 42,
+                "y": 61
+              },
+              {
+                "id": "inncourtyard",
+                "x": 55,
+                "y": 65
+              },
+              {
+                "id": "kidshouse",
+                "x": 29,
+                "y": 72
+              },
+              {
+                "id": "wokdonalds",
+                "x": 71,
+                "y": 72
+              },
+              {
+                "id": "dalkynhouse",
+                "x": 80,
+                "y": 72
+              },
+              {
+                "id": "shop",
+                "x": 44,
+                "y": 73
+              },
+              {
+                "id": "inn",
+                "x": 53,
+                "y": 73
+              },
+              {
+                "id": "inn2",
+                "x": 59,
+                "y": 73
+              },
+              {
+                "id": "ending",
+                "x": 65,
+                "y": 80
+              },
+              {
+                "id": "noblehouse",
+                "x": 54,
+                "y": 85
+              },
+              {
+                "id": "gamblinghouse",
+                "x": 70,
+                "y": 86
+              },
+              {
+                "id": "southwesthouse",
+                "x": 38,
+                "y": 88
+              },
+              {
+                "id": "front",
+                "x": 63,
+                "y": 108
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "CapitalInterior",
+        "name": "Capital Interior",
+        "variants": [
+          {
+            "time": 0,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "jailExit",
+                "x": 19,
+                "y": 14
+              },
+              {
+                "id": "startMusicBall",
+                "x": 61,
+                "y": 32
+              },
+              {
+                "id": "zoneChest",
+                "x": 58,
+                "y": 36
+              },
+              {
+                "id": "endMusicBall",
+                "x": 61,
+                "y": 38
+              },
+              {
+                "id": "o_talk",
+                "x": 4,
+                "y": 53
+              },
+              {
+                "id": "cache0",
+                "x": 79,
+                "y": 56
+              },
+              {
+                "id": "waiterPos",
+                "x": 54,
+                "y": 66
+              },
+              {
+                "id": "sleep",
+                "x": 25,
+                "y": 67
+              },
+              {
+                "id": "cache2",
+                "x": 34,
+                "y": 67
+              },
+              {
+                "id": "rp8",
+                "x": 58,
+                "y": 67
+              },
+              {
+                "id": "rp9",
+                "x": 59,
+                "y": 67
+              },
+              {
+                "id": "rp10",
+                "x": 62,
+                "y": 67
+              },
+              {
+                "id": "rp11",
+                "x": 63,
+                "y": 67
+              },
+              {
+                "id": "cache3",
+                "x": 64,
+                "y": 67
+              },
+              {
+                "id": "rp14",
+                "x": 64,
+                "y": 68
+              },
+              {
+                "id": "rp6",
+                "x": 58,
+                "y": 69
+              },
+              {
+                "id": "rp7",
+                "x": 59,
+                "y": 69
+              },
+              {
+                "id": "rp12",
+                "x": 62,
+                "y": 69
+              },
+              {
+                "id": "rp13",
+                "x": 63,
+                "y": 69
+              },
+              {
+                "id": "rp0",
+                "x": 54,
+                "y": 70
+              },
+              {
+                "id": "rp3",
+                "x": 56,
+                "y": 70
+              },
+              {
+                "id": "innU1",
+                "x": 28,
+                "y": 71
+              },
+              {
+                "id": "rp1",
+                "x": 54,
+                "y": 71
+              },
+              {
+                "id": "rp4",
+                "x": 56,
+                "y": 71
+              },
+              {
+                "id": "rp15",
+                "x": 61,
+                "y": 71
+              },
+              {
+                "id": "rp17",
+                "x": 64,
+                "y": 71
+              },
+              {
+                "id": "rp2",
+                "x": 54,
+                "y": 72
+              },
+              {
+                "id": "rp5",
+                "x": 56,
+                "y": 72
+              },
+              {
+                "id": "rp16",
+                "x": 61,
+                "y": 72
+              },
+              {
+                "id": "rp18",
+                "x": 64,
+                "y": 72
+              },
+              {
+                "id": "sewers2Exit",
+                "x": 81,
+                "y": 73
+              },
+              {
+                "id": "cache1",
+                "x": 34,
+                "y": 94
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 500,
+            "height": 40,
+            "anchors": [
+              {
+                "id": "zoneChest",
+                "x": 90,
+                "y": 11
+              },
+              {
+                "id": "innUpstairs",
+                "x": 222,
+                "y": 19
+              },
+              {
+                "id": "house5",
+                "x": 40,
+                "y": 20
+              },
+              {
+                "id": "innOut",
+                "x": 164,
+                "y": 22
+              },
+              {
+                "id": "innDownstairs",
+                "x": 175,
+                "y": 26
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "zoneChest2",
+                "x": 50,
+                "y": 1
+              },
+              {
+                "id": "zoneCard1",
+                "x": 20,
+                "y": 2
+              },
+              {
+                "id": "zoneChest1",
+                "x": 1,
+                "y": 4
+              },
+              {
+                "id": "land",
+                "x": 6,
+                "y": 11
+              },
+              {
+                "id": "secrethouse",
+                "x": 4,
+                "y": 16
+              },
+              {
+                "id": "guardhouse",
+                "x": 28,
+                "y": 16
+              },
+              {
+                "id": "library",
+                "x": 63,
+                "y": 16
+              },
+              {
+                "id": "zoneCard2",
+                "x": 34,
+                "y": 23
+              },
+              {
+                "id": "inncourtyard",
+                "x": 45,
+                "y": 33
+              },
+              {
+                "id": "wokdonalds",
+                "x": 73,
+                "y": 38
+              },
+              {
+                "id": "shop",
+                "x": 18,
+                "y": 39
+              },
+              {
+                "id": "inn",
+                "x": 39,
+                "y": 46
+              },
+              {
+                "id": "inn2",
+                "x": 50,
+                "y": 46
+              },
+              {
+                "id": "gamblinghouse",
+                "x": 73,
+                "y": 67
+              },
+              {
+                "id": "southwesthouse",
+                "x": 15,
+                "y": 68
+              },
+              {
+                "id": "noblehouse",
+                "x": 46,
+                "y": 68
+              },
+              {
+                "id": "zoneChest3",
+                "x": 68,
+                "y": 79
+              },
+              {
+                "id": "ppos",
+                "x": 45,
+                "y": 83
+              },
+              {
+                "id": "kidshouse",
+                "x": 45,
+                "y": 89
+              },
+              {
+                "id": "dalkynhouse",
+                "x": 71,
+                "y": 90
+              }
+            ],
+            "events": [
+              "meetDalkin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "NorthBridge",
+        "name": "Mayenne Bridge",
+        "variants": [
+          {
+            "time": 0,
+            "width": 25,
+            "height": 40,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 13,
+                "y": 9
+              },
+              {
+                "id": "rockPlace",
+                "x": 12,
+                "y": 22
+              },
+              {
+                "id": "south",
+                "x": 12,
+                "y": 33
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 90,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 45,
+                "y": 18
+              },
+              {
+                "id": "south",
+                "x": 40,
+                "y": 95
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 20,
+                "y": 3
+              },
+              {
+                "id": "south",
+                "x": 18,
+                "y": 41
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "NorthCavern",
+        "name": "Caverns of Noria",
+        "variants": [
+          {
+            "time": 0,
+            "width": 560,
+            "height": 128,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 546,
+                "y": 0
+              },
+              {
+                "id": "boss2",
+                "x": 521,
+                "y": 12
+              },
+              {
+                "id": "boss1",
+                "x": 523,
+                "y": 39
+              },
+              {
+                "id": "kspawn",
+                "x": 195,
+                "y": 61
+              },
+              {
+                "id": "espawn",
+                "x": 266,
+                "y": 64
+              }
+            ],
+            "events": [
+              "start"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DemonCamp",
+        "name": "Demon Camp",
+        "variants": [
+          {
+            "time": 0,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 39,
+                "y": 12
+              },
+              {
+                "id": "reno",
+                "x": 33,
+                "y": 36
+              },
+              {
+                "id": "south",
+                "x": 38,
+                "y": 49
+              }
+            ],
+            "events": [
+              "enterDemonCamp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Foreland",
+        "name": "Bluff",
+        "variants": [
+          {
+            "time": 0,
+            "width": 35,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 16,
+                "y": 27
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "start",
+                "x": 49,
+                "y": 65
+              },
+              {
+                "id": "front",
+                "x": 49,
+                "y": 89
+              },
+              {
+                "id": "lock",
+                "x": 49,
+                "y": 93
+              },
+              {
+                "id": "enter",
+                "x": 49,
+                "y": 96
+              }
+            ],
+            "events": [
+              "entryFutur"
+            ]
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "start",
+                "x": 23,
+                "y": 47
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Library",
+        "name": "Great Library",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "ending",
+                "x": 48,
+                "y": 29
+              },
+              {
+                "id": "entrance",
+                "x": 48,
+                "y": 33
+              }
+            ],
+            "events": [
+              "entranceLib"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Harbor",
+        "name": "Seera | Seera Harbor | Seera Harbor",
+        "variants": [
+          {
+            "time": 0,
+            "width": 24,
+            "height": 26,
+            "anchors": [
+              {
+                "id": "left",
+                "x": 1,
+                "y": 9
+              },
+              {
+                "id": "right",
+                "x": 16,
+                "y": 10
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 120,
+            "height": 80,
+            "anchors": [
+              {
+                "id": "left",
+                "x": 37,
+                "y": 44
+              },
+              {
+                "id": "right",
+                "x": 100,
+                "y": 45
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "house1",
+                "x": 12,
+                "y": 18
+              },
+              {
+                "id": "house2",
+                "x": 24,
+                "y": 20
+              },
+              {
+                "id": "house3",
+                "x": 33,
+                "y": 20
+              },
+              {
+                "id": "left",
+                "x": 5,
+                "y": 21
+              },
+              {
+                "id": "right",
+                "x": 42,
+                "y": 21
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Windvalley",
+        "name": "Windy Valley",
+        "variants": [
+          {
+            "time": 0,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 33,
+                "y": 2
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 53,
+                "y": 48
+              },
+              {
+                "id": "exit",
+                "x": 18,
+                "y": 55
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 32,
+                "y": 4
+              },
+              {
+                "id": "wvc",
+                "x": 9,
+                "y": 10
+              },
+              {
+                "id": "side",
+                "x": 22,
+                "y": 17
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Windvalley2",
+        "name": "Windy Valley",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 52,
+                "y": 47
+              },
+              {
+                "id": "shootEnd",
+                "x": 43,
+                "y": 49
+              },
+              {
+                "id": "house3",
+                "x": 36,
+                "y": 50
+              },
+              {
+                "id": "exit",
+                "x": 18,
+                "y": 55
+              },
+              {
+                "id": "house2",
+                "x": 43,
+                "y": 62
+              },
+              {
+                "id": "magFront",
+                "x": 80,
+                "y": 87
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "WindvalleyClimb",
+        "name": "Windy Caves",
+        "variants": [
+          {
+            "time": 2,
+            "width": 32,
+            "height": 400,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 27,
+                "y": 73
+              },
+              {
+                "id": "enter",
+                "x": 2,
+                "y": 390
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "wvc",
+                "x": 2,
+                "y": 21
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MountAlpha",
+        "name": "Mount Alpha",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "takeoff",
+                "x": 50,
+                "y": 67
+              },
+              {
+                "id": "enter",
+                "x": 41,
+                "y": 86
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "CapitalRunner",
+        "name": "Genova rooftops",
+        "variants": [
+          {
+            "time": 1,
+            "width": 2000,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 1754,
+                "y": 36
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "_Test",
+        "name": " Test",
+        "variants": []
+      },
+      {
+        "id": "RebossRunner",
+        "name": "Reboss Runner",
+        "variants": [
+          {
+            "time": 1,
+            "width": 80,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 70,
+                "y": 36
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "_TestFight",
+        "name": " Test Fight",
+        "variants": [
+          {
+            "time": 0,
+            "width": 100,
+            "height": 100,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossDD",
+        "name": "Reboss DD",
+        "variants": [
+          {
+            "time": 1,
+            "width": 25,
+            "height": 25,
+            "anchors": [
+              {
+                "id": "Spawn1",
+                "x": 7,
+                "y": 7
+              },
+              {
+                "id": "Spawn2",
+                "x": 16,
+                "y": 7
+              },
+              {
+                "id": "Start",
+                "x": 11,
+                "y": 12
+              },
+              {
+                "id": "enter",
+                "x": 11,
+                "y": 16
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Shooter",
+        "name": "Shooter",
+        "variants": [
+          {
+            "time": 2,
+            "width": 52,
+            "height": 512,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "_Test3D",
+        "name": " Test3 D",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "_JailOld",
+        "name": " Jail Old",
+        "variants": [
+          {
+            "time": 0,
+            "width": 250,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 191,
+                "y": 4
+              },
+              {
+                "id": "finalGuard",
+                "x": 238,
+                "y": 5
+              },
+              {
+                "id": "hit",
+                "x": 134,
+                "y": 32
+              },
+              {
+                "id": "hit",
+                "x": 138,
+                "y": 32
+              },
+              {
+                "id": "hall",
+                "x": 238,
+                "y": 32
+              },
+              {
+                "id": "hit",
+                "x": 129,
+                "y": 33
+              },
+              {
+                "id": "hit",
+                "x": 131,
+                "y": 33
+              },
+              {
+                "id": "hit",
+                "x": 129,
+                "y": 38
+              },
+              {
+                "id": "hit",
+                "x": 138,
+                "y": 38
+              },
+              {
+                "id": "hit",
+                "x": 131,
+                "y": 39
+              },
+              {
+                "id": "hit",
+                "x": 134,
+                "y": 39
+              }
+            ],
+            "events": [
+              "jailWakeup"
+            ]
+          },
+          {
+            "time": 2,
+            "width": 20,
+            "height": 20,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "_SewersOld",
+        "name": " Sewers Old",
+        "variants": [
+          {
+            "time": 0,
+            "width": 600,
+            "height": 64,
+            "anchors": [
+              {
+                "id": "gravity",
+                "x": 2,
+                "y": 4
+              },
+              {
+                "id": "entry",
+                "x": 233,
+                "y": 6
+              },
+              {
+                "id": "out",
+                "x": 547,
+                "y": 8
+              }
+            ],
+            "events": [
+              "jump"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "WindvalleyInterior",
+        "name": "Windvalley Interior",
+        "variants": [
+          {
+            "time": 2,
+            "width": 120,
+            "height": 40,
+            "anchors": [
+              {
+                "id": "zoneChest",
+                "x": 35,
+                "y": 4
+              },
+              {
+                "id": "house2",
+                "x": 40,
+                "y": 11
+              },
+              {
+                "id": "house3",
+                "x": 74,
+                "y": 13
+              }
+            ],
+            "events": [
+              "getWing"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Mine",
+        "name": "Hephas' Smithy | Mine | Pyramid of the Prophet",
+        "variants": [
+          {
+            "time": 0,
+            "width": 30,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "entrance",
+                "x": 14,
+                "y": 27
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 60,
+            "height": 85,
+            "anchors": [
+              {
+                "id": "pyramidLock",
+                "x": 19,
+                "y": 33
+              },
+              {
+                "id": "pyramid",
+                "x": 19,
+                "y": 34
+              },
+              {
+                "id": "start",
+                "x": 47,
+                "y": 49
+              }
+            ],
+            "events": [
+              "introProphet"
+            ]
+          },
+          {
+            "time": 1,
+            "width": 300,
+            "height": 200,
+            "anchors": [
+              {
+                "id": "cart01end",
+                "x": 121,
+                "y": 58
+              },
+              {
+                "id": "cart001end",
+                "x": 61,
+                "y": 71
+              },
+              {
+                "id": "cart02end",
+                "x": 203,
+                "y": 91
+              },
+              {
+                "id": "zoneMole",
+                "x": 198,
+                "y": 96
+              },
+              {
+                "id": "bossScrollStop3",
+                "x": 7,
+                "y": 117
+              },
+              {
+                "id": "bossScrollStop5",
+                "x": 29,
+                "y": 117
+              },
+              {
+                "id": "secretScrollStop",
+                "x": 94,
+                "y": 117
+              },
+              {
+                "id": "bossScrollStop4",
+                "x": 9,
+                "y": 118
+              },
+              {
+                "id": "zoneRail3",
+                "x": 203,
+                "y": 118
+              },
+              {
+                "id": "zoneBoss2",
+                "x": 9,
+                "y": 122
+              },
+              {
+                "id": "zoneChestMultiBomb",
+                "x": 108,
+                "y": 122
+              },
+              {
+                "id": "underLock2",
+                "x": 28,
+                "y": 123
+              },
+              {
+                "id": "plumSpawn",
+                "x": 15,
+                "y": 124
+              },
+              {
+                "id": "noDynamiteRock",
+                "x": 38,
+                "y": 124
+              },
+              {
+                "id": "center",
+                "x": 22,
+                "y": 126
+              },
+              {
+                "id": "beforeBossScrollStop",
+                "x": 28,
+                "y": 126
+              },
+              {
+                "id": "cart001start",
+                "x": 51,
+                "y": 127
+              },
+              {
+                "id": "zoneDynamiteEntrance",
+                "x": 48,
+                "y": 130
+              },
+              {
+                "id": "cart000start",
+                "x": 58,
+                "y": 131
+              },
+              {
+                "id": "bossScrollStop2",
+                "x": 8,
+                "y": 132
+              },
+              {
+                "id": "cart000end",
+                "x": 58,
+                "y": 143
+              },
+              {
+                "id": "bossBridge",
+                "x": 53,
+                "y": 147
+              },
+              {
+                "id": "scrollStopLeft",
+                "x": 43,
+                "y": 148
+              },
+              {
+                "id": "underLock",
+                "x": 63,
+                "y": 149
+              },
+              {
+                "id": "bossScrollStop",
+                "x": 64,
+                "y": 149
+              },
+              {
+                "id": "zoneBoss1",
+                "x": 46,
+                "y": 150
+              },
+              {
+                "id": "scrollStopDown",
+                "x": 45,
+                "y": 154
+              },
+              {
+                "id": "enter",
+                "x": 72,
+                "y": 165
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MagiIsland",
+        "name": "Cursed Isle",
+        "variants": [
+          {
+            "time": 0,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 34,
+                "y": 17
+              },
+              {
+                "id": "enter",
+                "x": 13,
+                "y": 30
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 150,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "puzzle",
+                "x": 55,
+                "y": 49
+              },
+              {
+                "id": "scrollStele",
+                "x": 59,
+                "y": 51
+              },
+              {
+                "id": "magFront",
+                "x": 91,
+                "y": 55
+              },
+              {
+                "id": "up",
+                "x": 90,
+                "y": 64
+              },
+              {
+                "id": "enter",
+                "x": 57,
+                "y": 74
+              }
+            ],
+            "events": [
+              "firstBoat",
+              "futurToPresent"
+            ]
+          },
+          {
+            "time": 1,
+            "width": 80,
+            "height": 80,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 59,
+                "y": 21
+              },
+              {
+                "id": "enter",
+                "x": 24,
+                "y": 34
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "HarborInterior",
+        "name": "Harbor Interior",
+        "variants": [
+          {
+            "time": 1,
+            "width": 75,
+            "height": 25,
+            "anchors": [
+              {
+                "id": "house2",
+                "x": 34,
+                "y": 14
+              },
+              {
+                "id": "house3",
+                "x": 56,
+                "y": 14
+              },
+              {
+                "id": "house1",
+                "x": 14,
+                "y": 15
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Catacombs",
+        "name": "Catacombs",
+        "variants": [
+          {
+            "time": 2,
+            "width": 150,
+            "height": 155,
+            "anchors": [
+              {
+                "id": "spawnPlanch",
+                "x": 18,
+                "y": 36
+              },
+              {
+                "id": "killSkels",
+                "x": 13,
+                "y": 49
+              },
+              {
+                "id": "slimeTrap",
+                "x": 96,
+                "y": 60
+              },
+              {
+                "id": "skelZone",
+                "x": 126,
+                "y": 61
+              },
+              {
+                "id": "trap",
+                "x": 105,
+                "y": 65
+              },
+              {
+                "id": "killFish",
+                "x": 14,
+                "y": 78
+              },
+              {
+                "id": "spawnPlanch2",
+                "x": 20,
+                "y": 80
+              },
+              {
+                "id": "jabbaCollide",
+                "x": 77,
+                "y": 92
+              },
+              {
+                "id": "respawn",
+                "x": 108,
+                "y": 94
+              },
+              {
+                "id": "bossSpawn",
+                "x": 79,
+                "y": 98
+              },
+              {
+                "id": "chestSpawn",
+                "x": 79,
+                "y": 99
+              },
+              {
+                "id": "bossLock",
+                "x": 77,
+                "y": 106
+              },
+              {
+                "id": "lock2",
+                "x": 30,
+                "y": 110
+              },
+              {
+                "id": "bigSlime",
+                "x": 21,
+                "y": 121
+              },
+              {
+                "id": "bossDoorLock",
+                "x": 76,
+                "y": 122
+              },
+              {
+                "id": "lock",
+                "x": 30,
+                "y": 126
+              },
+              {
+                "id": "enter",
+                "x": 78,
+                "y": 147
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "PirateHideout",
+        "name": "Pirates' Lair",
+        "variants": [
+          {
+            "time": 1,
+            "width": 200,
+            "height": 55,
+            "anchors": [
+              {
+                "id": "lock6",
+                "x": 123,
+                "y": 6
+              },
+              {
+                "id": "lock7",
+                "x": 146,
+                "y": 8
+              },
+              {
+                "id": "spawn7L",
+                "x": 123,
+                "y": 22
+              },
+              {
+                "id": "spawn7R",
+                "x": 146,
+                "y": 22
+              },
+              {
+                "id": "lock6end",
+                "x": 117,
+                "y": 25
+              },
+              {
+                "id": "downLock",
+                "x": 126,
+                "y": 25
+              },
+              {
+                "id": "upLock",
+                "x": 126,
+                "y": 28
+              },
+              {
+                "id": "spawnEnd",
+                "x": 152,
+                "y": 28
+              },
+              {
+                "id": "lock0",
+                "x": 26,
+                "y": 30
+              },
+              {
+                "id": "lockDoor",
+                "x": 91,
+                "y": 30
+              },
+              {
+                "id": "bossLock",
+                "x": 153,
+                "y": 30
+              },
+              {
+                "id": "lock1",
+                "x": 47,
+                "y": 32
+              },
+              {
+                "id": "lock2",
+                "x": 70,
+                "y": 32
+              },
+              {
+                "id": "lock3",
+                "x": 92,
+                "y": 32
+              },
+              {
+                "id": "getFrag",
+                "x": 164,
+                "y": 33
+              },
+              {
+                "id": "underLock",
+                "x": 124,
+                "y": 34
+              },
+              {
+                "id": "lockLadder",
+                "x": 91,
+                "y": 35
+              },
+              {
+                "id": "return1",
+                "x": 105,
+                "y": 41
+              },
+              {
+                "id": "door3p",
+                "x": 108,
+                "y": 43
+              },
+              {
+                "id": "lock5",
+                "x": 121,
+                "y": 43
+              },
+              {
+                "id": "spawn1",
+                "x": 47,
+                "y": 45
+              },
+              {
+                "id": "spawn2",
+                "x": 70,
+                "y": 45
+              },
+              {
+                "id": "spawn3",
+                "x": 93,
+                "y": 45
+              },
+              {
+                "id": "spawn5",
+                "x": 121,
+                "y": 46
+              },
+              {
+                "id": "spawn0",
+                "x": 28,
+                "y": 47
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Pyramid",
+        "name": "Pyramid",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "ending",
+                "x": 43,
+                "y": 42
+              },
+              {
+                "id": "timeStone",
+                "x": 43,
+                "y": 43
+              },
+              {
+                "id": "spawn",
+                "x": 51,
+                "y": 47
+              }
+            ],
+            "events": [
+              "welcome"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "GhostForest",
+        "name": "Haunted forest",
+        "variants": [
+          {
+            "time": 0,
+            "width": 54,
+            "height": 70,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 47,
+                "y": 2
+              },
+              {
+                "id": "zone2",
+                "x": 19,
+                "y": 21
+              },
+              {
+                "id": "lock2",
+                "x": 24,
+                "y": 27
+              },
+              {
+                "id": "zone4",
+                "x": 26,
+                "y": 34
+              },
+              {
+                "id": "lock4",
+                "x": 35,
+                "y": 35
+              },
+              {
+                "id": "zone1",
+                "x": 15,
+                "y": 36
+              },
+              {
+                "id": "lock1",
+                "x": 14,
+                "y": 42
+              },
+              {
+                "id": "caveExit",
+                "x": 42,
+                "y": 60
+              },
+              {
+                "id": "south",
+                "x": 35,
+                "y": 67
+              }
+            ],
+            "events": [
+              "enterGhost"
+            ]
+          },
+          {
+            "time": 2,
+            "width": 100,
+            "height": 80,
+            "anchors": [
+              {
+                "id": "cat",
+                "x": 74,
+                "y": 60
+              },
+              {
+                "id": "south",
+                "x": 55,
+                "y": 71
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 48,
+            "anchors": [
+              {
+                "id": "GhostForestTop",
+                "x": 44,
+                "y": 4
+              },
+              {
+                "id": "tomb",
+                "x": 13,
+                "y": 16
+              },
+              {
+                "id": "ending",
+                "x": 22,
+                "y": 16
+              },
+              {
+                "id": "GhostForestBot",
+                "x": 22,
+                "y": 45
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "GhostForestCave",
+        "name": "Ghost Forest Cave",
+        "variants": [
+          {
+            "time": 0,
+            "width": 150,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 8,
+                "y": 3
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 35,
+            "height": 20,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "LaboEntrance",
+        "name": "Laboratory",
+        "variants": [
+          {
+            "time": 0,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 25,
+                "y": 17
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "start",
+                "x": 42,
+                "y": 44
+              },
+              {
+                "id": "laboExit",
+                "x": 17,
+                "y": 12
+              },
+              {
+                "id": "lock",
+                "x": 27,
+                "y": 19
+              },
+              {
+                "id": "renoPos",
+                "x": 18,
+                "y": 21
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "spawn",
+                "x": 17,
+                "y": 17
+              },
+              {
+                "id": "enter",
+                "x": 41,
+                "y": 53
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "VikingVillage",
+        "name": "Viking Village",
+        "variants": [
+          {
+            "time": 0,
+            "width": 80,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "tunel",
+                "x": 17,
+                "y": 5
+              },
+              {
+                "id": "house2",
+                "x": 25,
+                "y": 8
+              },
+              {
+                "id": "house1",
+                "x": 10,
+                "y": 9
+              },
+              {
+                "id": "ending",
+                "x": 59,
+                "y": 18
+              },
+              {
+                "id": "house3",
+                "x": 34,
+                "y": 22
+              },
+              {
+                "id": "shop",
+                "x": 23,
+                "y": 23
+              },
+              {
+                "id": "enter",
+                "x": 14,
+                "y": 27
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "VikingInterior",
+        "name": "Viking Interior",
+        "variants": [
+          {
+            "time": 0,
+            "width": 50,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "house1",
+                "x": 5,
+                "y": 8
+              },
+              {
+                "id": "house2",
+                "x": 31,
+                "y": 9
+              },
+              {
+                "id": "shop",
+                "x": 13,
+                "y": 24
+              },
+              {
+                "id": "house3",
+                "x": 38,
+                "y": 25
+              }
+            ],
+            "events": [
+              "enterBoss"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VikingTunel",
+        "name": "Wiking Tunnel",
+        "variants": [
+          {
+            "time": 0,
+            "width": 80,
+            "height": 80,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 9,
+                "y": 3
+              },
+              {
+                "id": "enter",
+                "x": 30,
+                "y": 71
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "WeaponHearth",
+        "name": "Weapon Core",
+        "variants": [
+          {
+            "time": 2,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "portal",
+                "x": 23,
+                "y": 20
+              },
+              {
+                "id": "center",
+                "x": 23,
+                "y": 23
+              }
+            ],
+            "events": [
+              "act2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Labo",
+        "name": "Giro's Lab",
+        "variants": [
+          {
+            "time": 1,
+            "width": 250,
+            "height": 200,
+            "anchors": [
+              {
+                "id": "centerFight31",
+                "x": 77,
+                "y": 27
+              },
+              {
+                "id": "centerFight32",
+                "x": 91,
+                "y": 43
+              },
+              {
+                "id": "centerFight30",
+                "x": 69,
+                "y": 45
+              },
+              {
+                "id": "zone41",
+                "x": 138,
+                "y": 54
+              },
+              {
+                "id": "zone42",
+                "x": 144,
+                "y": 54
+              },
+              {
+                "id": "centerFight40",
+                "x": 143,
+                "y": 58
+              },
+              {
+                "id": "centerFight33",
+                "x": 96,
+                "y": 64
+              },
+              {
+                "id": "centerFight29",
+                "x": 67,
+                "y": 77
+              },
+              {
+                "id": "centerFight28",
+                "x": 71,
+                "y": 88
+              },
+              {
+                "id": "centerFight23",
+                "x": 85,
+                "y": 88
+              },
+              {
+                "id": "centerFalseFight",
+                "x": 66,
+                "y": 92
+              },
+              {
+                "id": "ending",
+                "x": 65,
+                "y": 98
+              },
+              {
+                "id": "centerFight20",
+                "x": 88,
+                "y": 97
+              },
+              {
+                "id": "centerFight26",
+                "x": 74,
+                "y": 98
+              },
+              {
+                "id": "bridge2",
+                "x": 58,
+                "y": 101
+              },
+              {
+                "id": "centerFight22",
+                "x": 85,
+                "y": 103
+              },
+              {
+                "id": "centerFight24",
+                "x": 77,
+                "y": 109
+              },
+              {
+                "id": "centerFight13",
+                "x": 89,
+                "y": 126
+              },
+              {
+                "id": "centerFight12",
+                "x": 91,
+                "y": 132
+              },
+              {
+                "id": "centerFight11",
+                "x": 98,
+                "y": 133
+              },
+              {
+                "id": "centerFight04",
+                "x": 119,
+                "y": 135
+              },
+              {
+                "id": "centerFight10",
+                "x": 101,
+                "y": 136
+              },
+              {
+                "id": "centerFight01",
+                "x": 150,
+                "y": 136
+              },
+              {
+                "id": "centerFight03",
+                "x": 121,
+                "y": 143
+              },
+              {
+                "id": "centerFight02",
+                "x": 135,
+                "y": 143
+              },
+              {
+                "id": "enter",
+                "x": 170,
+                "y": 157
+              }
+            ],
+            "events": [
+              "entrance"
+            ]
+          },
+          {
+            "time": 0,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "ending",
+                "x": 22,
+                "y": 25
+              },
+              {
+                "id": "entry",
+                "x": 22,
+                "y": 31
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Glitch",
+        "name": "The Anomaly",
+        "variants": [
+          {
+            "time": 2,
+            "width": 150,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "takeoff",
+                "x": 81,
+                "y": 5
+              },
+              {
+                "id": "bossEnd",
+                "x": 30,
+                "y": 6
+              },
+              {
+                "id": "rotator3",
+                "x": 24,
+                "y": 7
+              },
+              {
+                "id": "rotator2",
+                "x": 9,
+                "y": 10
+              },
+              {
+                "id": "rotator4",
+                "x": 29,
+                "y": 16
+              },
+              {
+                "id": "rotator1",
+                "x": 18,
+                "y": 18
+              },
+              {
+                "id": "ending",
+                "x": 17,
+                "y": 24
+              },
+              {
+                "id": "unlock5",
+                "x": 88,
+                "y": 50
+              },
+              {
+                "id": "unlock3",
+                "x": 44,
+                "y": 60
+              },
+              {
+                "id": "topsLock",
+                "x": 83,
+                "y": 73
+              },
+              {
+                "id": "unlock4",
+                "x": 121,
+                "y": 91
+              },
+              {
+                "id": "portalSpawn",
+                "x": 96,
+                "y": 119
+              },
+              {
+                "id": "unlock1",
+                "x": 92,
+                "y": 123
+              },
+              {
+                "id": "start",
+                "x": 101,
+                "y": 137
+              },
+              {
+                "id": "exitHeight",
+                "x": 100,
+                "y": 145
+              }
+            ],
+            "events": [
+              "enter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BigThing",
+        "name": "Big Thing",
+        "variants": [
+          {
+            "time": 1,
+            "width": 1000,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "start",
+                "x": 7,
+                "y": 6
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "IcyCavern",
+        "name": "Frozen Cavern",
+        "variants": [
+          {
+            "time": 2,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 23,
+                "y": 21
+              },
+              {
+                "id": "enter",
+                "x": 25,
+                "y": 40
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 10,
+                "y": 13
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 0,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 10,
+                "y": 20
+              },
+              {
+                "id": "enter",
+                "x": 10,
+                "y": 28
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "DemoniaTemple",
+        "name": "Demonia Temple",
+        "variants": [
+          {
+            "time": 2,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "top",
+                "x": 24,
+                "y": 9
+              },
+              {
+                "id": "enter",
+                "x": 25,
+                "y": 44
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "_Antik",
+        "name": " Antik",
+        "variants": []
+      },
+      {
+        "id": "ChickenIsland",
+        "name": "Cluckety Isle",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "dontLandHere",
+                "x": 63,
+                "y": 63
+              },
+              {
+                "id": "centerIsland",
+                "x": 49,
+                "y": 69
+              },
+              {
+                "id": "unlock",
+                "x": 63,
+                "y": 70
+              },
+              {
+                "id": "enter",
+                "x": 48,
+                "y": 82
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Sylves",
+        "name": "Sylph Forest",
+        "variants": [
+          {
+            "time": 1,
+            "width": 30,
+            "height": 70,
+            "anchors": [
+              {
+                "id": "forest",
+                "x": 2,
+                "y": 5
+              },
+              {
+                "id": "lock",
+                "x": 22,
+                "y": 13
+              },
+              {
+                "id": "ending",
+                "x": 14,
+                "y": 14
+              },
+              {
+                "id": "start",
+                "x": 10,
+                "y": 58
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "SylvesForest",
+        "name": "Sacred Grove",
+        "variants": [
+          {
+            "time": 0,
+            "width": 140,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "treePos2",
+                "x": 106,
+                "y": 45
+              },
+              {
+                "id": "treePos",
+                "x": 109,
+                "y": 52
+              },
+              {
+                "id": "posSDragon1",
+                "x": 105,
+                "y": 58
+              },
+              {
+                "id": "destMush2",
+                "x": 62,
+                "y": 63
+              },
+              {
+                "id": "destMush1",
+                "x": 66,
+                "y": 68
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 140,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "fairyAppear",
+                "x": 21,
+                "y": 31
+              },
+              {
+                "id": "posHero",
+                "x": 26,
+                "y": 51
+              },
+              {
+                "id": "posSDragon1",
+                "x": 105,
+                "y": 58
+              },
+              {
+                "id": "start",
+                "x": 129,
+                "y": 62
+              },
+              {
+                "id": "destMush2",
+                "x": 62,
+                "y": 63
+              },
+              {
+                "id": "destMush1",
+                "x": 66,
+                "y": 68
+              }
+            ],
+            "events": [
+              "meetManaTree"
+            ]
+          },
+          {
+            "time": 2,
+            "width": 140,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "posSDragon1",
+                "x": 105,
+                "y": 58
+              },
+              {
+                "id": "destMush2",
+                "x": 62,
+                "y": 63
+              },
+              {
+                "id": "destMush1",
+                "x": 66,
+                "y": 68
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia0",
+        "name": "Disembarking",
+        "variants": [
+          {
+            "time": 0,
+            "width": 40,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "zoneMonsters",
+                "x": 4,
+                "y": 4
+              },
+              {
+                "id": "win",
+                "x": 7,
+                "y": 9
+              },
+              {
+                "id": "posHero",
+                "x": 15,
+                "y": 11
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 13
+              },
+              {
+                "id": "spawn",
+                "x": 30,
+                "y": 16
+              },
+              {
+                "id": "east",
+                "x": 38,
+                "y": 21
+              }
+            ],
+            "events": [
+              "intro"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Demonia1",
+        "name": "Outpost",
+        "variants": [
+          {
+            "time": 0,
+            "width": 32,
+            "height": 22,
+            "anchors": [
+              {
+                "id": "zoneMonsters",
+                "x": 1,
+                "y": 6
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 10
+              },
+              {
+                "id": "posHero",
+                "x": 13,
+                "y": 10
+              },
+              {
+                "id": "stopDalkin",
+                "x": 15,
+                "y": 10
+              },
+              {
+                "id": "enterDeploy",
+                "x": 20,
+                "y": 10
+              },
+              {
+                "id": "deployZone",
+                "x": 14,
+                "y": 12
+              },
+              {
+                "id": "win",
+                "x": 7,
+                "y": 13
+              },
+              {
+                "id": "talkMagus",
+                "x": 3,
+                "y": 15
+              },
+              {
+                "id": "east",
+                "x": 30,
+                "y": 19
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia11",
+        "name": "Surprise Attack",
+        "variants": [
+          {
+            "time": 0,
+            "width": 25,
+            "height": 23,
+            "anchors": [
+              {
+                "id": "east",
+                "x": 23,
+                "y": 4
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 5,
+                "y": 7
+              },
+              {
+                "id": "enterDeploy",
+                "x": 15,
+                "y": 7
+              },
+              {
+                "id": "deployZone",
+                "x": 12,
+                "y": 12
+              },
+              {
+                "id": "posHero",
+                "x": 12,
+                "y": 14
+              },
+              {
+                "id": "win",
+                "x": 9,
+                "y": 17
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 19
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia2",
+        "name": "The River Kawai",
+        "variants": [
+          {
+            "time": 0,
+            "width": 28,
+            "height": 27,
+            "anchors": [
+              {
+                "id": "enterDeployDerriere",
+                "x": 11,
+                "y": 2
+              },
+              {
+                "id": "deployZoneDerriere",
+                "x": 3,
+                "y": 5
+              },
+              {
+                "id": "alerte",
+                "x": 2,
+                "y": 8
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 6,
+                "y": 11
+              },
+              {
+                "id": "deployZoneDevant",
+                "x": 18,
+                "y": 11
+              },
+              {
+                "id": "pont",
+                "x": 15,
+                "y": 12
+              },
+              {
+                "id": "east",
+                "x": 26,
+                "y": 13
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 14
+              },
+              {
+                "id": "win",
+                "x": 7,
+                "y": 14
+              },
+              {
+                "id": "enterDeployDevant",
+                "x": 24,
+                "y": 15
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia3",
+        "name": "Secret Weapons",
+        "variants": [
+          {
+            "time": 0,
+            "width": 42,
+            "height": 32,
+            "anchors": [
+              {
+                "id": "enterDeploy1",
+                "x": 28,
+                "y": 4
+              },
+              {
+                "id": "deployZone1",
+                "x": 17,
+                "y": 6
+              },
+              {
+                "id": "east",
+                "x": 40,
+                "y": 9
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 14,
+                "y": 10
+              },
+              {
+                "id": "enterDeploy2",
+                "x": 35,
+                "y": 11
+              },
+              {
+                "id": "deployZone2",
+                "x": 31,
+                "y": 14
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 18
+              },
+              {
+                "id": "win",
+                "x": 15,
+                "y": 18
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia4",
+        "name": "Ambush",
+        "variants": [
+          {
+            "time": 0,
+            "width": 39,
+            "height": 25,
+            "anchors": [
+              {
+                "id": "east",
+                "x": 37,
+                "y": 5
+              },
+              {
+                "id": "enterDeploy3",
+                "x": 13,
+                "y": 7
+              },
+              {
+                "id": "enterDeploy2",
+                "x": 21,
+                "y": 7
+              },
+              {
+                "id": "enterDeploy1",
+                "x": 30,
+                "y": 7
+              },
+              {
+                "id": "deployZone3",
+                "x": 13,
+                "y": 11
+              },
+              {
+                "id": "deployZone2",
+                "x": 21,
+                "y": 11
+              },
+              {
+                "id": "deployZone1",
+                "x": 30,
+                "y": 11
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 1,
+                "y": 14
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 15
+              },
+              {
+                "id": "win",
+                "x": 19,
+                "y": 16
+              },
+              {
+                "id": "lieutenantPause",
+                "x": 24,
+                "y": 22
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia5",
+        "name": "Bridge",
+        "variants": [
+          {
+            "time": 0,
+            "width": 28,
+            "height": 25,
+            "anchors": [
+              {
+                "id": "east",
+                "x": 26,
+                "y": 6
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 3,
+                "y": 7
+              },
+              {
+                "id": "enterDeploy",
+                "x": 22,
+                "y": 9
+              },
+              {
+                "id": "win",
+                "x": 9,
+                "y": 11
+              },
+              {
+                "id": "deployZone",
+                "x": 17,
+                "y": 10
+              },
+              {
+                "id": "west",
+                "x": 1,
+                "y": 12
+              },
+              {
+                "id": "zoneMonsters2",
+                "x": 17,
+                "y": 14
+              },
+              {
+                "id": "spawnRenfort",
+                "x": 25,
+                "y": 21
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia6",
+        "name": "Wizards",
+        "variants": [
+          {
+            "time": 0,
+            "width": 31,
+            "height": 31,
+            "anchors": [
+              {
+                "id": "magiZone",
+                "x": 2,
+                "y": 5
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 3,
+                "y": 5
+              },
+              {
+                "id": "catapult1",
+                "x": 14,
+                "y": 9
+              },
+              {
+                "id": "deployZone",
+                "x": 21,
+                "y": 12
+              },
+              {
+                "id": "west",
+                "x": 2,
+                "y": 13
+              },
+              {
+                "id": "east",
+                "x": 28,
+                "y": 13
+              },
+              {
+                "id": "point1",
+                "x": 26,
+                "y": 14
+              },
+              {
+                "id": "catapult2",
+                "x": 14,
+                "y": 19
+              },
+              {
+                "id": "win",
+                "x": 15,
+                "y": 21
+              },
+              {
+                "id": "enterDeploy",
+                "x": 28,
+                "y": 21
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia7",
+        "name": "Demons",
+        "variants": [
+          {
+            "time": 0,
+            "width": 34,
+            "height": 19,
+            "anchors": [
+              {
+                "id": "zoneMonsters",
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": "deployZone",
+                "x": 23,
+                "y": 6
+              },
+              {
+                "id": "zoneDemon",
+                "x": 6,
+                "y": 7
+              },
+              {
+                "id": "discussionDemon",
+                "x": 4,
+                "y": 8
+              },
+              {
+                "id": "win",
+                "x": 13,
+                "y": 8
+              },
+              {
+                "id": "enterDeploy",
+                "x": 30,
+                "y": 8
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia8",
+        "name": "Catapults",
+        "variants": [
+          {
+            "time": 0,
+            "width": 26,
+            "height": 24,
+            "anchors": [
+              {
+                "id": "zoneMonsters",
+                "x": 2,
+                "y": 2
+              },
+              {
+                "id": "enterDeploy",
+                "x": 9,
+                "y": 2
+              },
+              {
+                "id": "deployZone",
+                "x": 11,
+                "y": 3
+              },
+              {
+                "id": "entrance2",
+                "x": 23,
+                "y": 14
+              },
+              {
+                "id": "win",
+                "x": 4,
+                "y": 16
+              },
+              {
+                "id": "entrance3",
+                "x": 23,
+                "y": 20
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia9",
+        "name": "Demonia Castle",
+        "variants": [
+          {
+            "time": 0,
+            "width": 38,
+            "height": 32,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 18,
+                "y": 2
+              },
+              {
+                "id": "zoneMonsters",
+                "x": 4,
+                "y": 3
+              },
+              {
+                "id": "win",
+                "x": 19,
+                "y": 6
+              },
+              {
+                "id": "deployZone",
+                "x": 16,
+                "y": 27
+              },
+              {
+                "id": "enterDeploy",
+                "x": 7,
+                "y": 29
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Demonia31",
+        "name": "Demonia31",
+        "variants": [
+          {
+            "time": 0,
+            "width": 21,
+            "height": 15,
+            "anchors": [
+              {
+                "id": "Start",
+                "x": 1,
+                "y": 6
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Meadow",
+        "name": "Clearing",
+        "variants": [
+          {
+            "time": 2,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "portal",
+                "x": 22,
+                "y": 19
+              },
+              {
+                "id": "enter",
+                "x": 23,
+                "y": 43
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 31,
+            "height": 51,
+            "anchors": [
+              {
+                "id": "portal",
+                "x": 14,
+                "y": 36
+              },
+              {
+                "id": "enter",
+                "x": 14,
+                "y": 48
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 0,
+            "width": 31,
+            "height": 51,
+            "anchors": [
+              {
+                "id": "bushZone",
+                "x": 7,
+                "y": 4
+              },
+              {
+                "id": "portal",
+                "x": 14,
+                "y": 37
+              },
+              {
+                "id": "enter",
+                "x": 14,
+                "y": 48
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "ZFinalBoss",
+        "name": "Temporal Limbo",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "machine",
+                "x": 45,
+                "y": 32
+              },
+              {
+                "id": "start",
+                "x": 45,
+                "y": 43
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "PFinalBoss",
+        "name": "PFinal Boss",
+        "variants": [
+          {
+            "time": 0,
+            "width": 50,
+            "height": 150,
+            "anchors": [
+              {
+                "id": "End",
+                "x": 0,
+                "y": 18
+              },
+              {
+                "id": "Start",
+                "x": 0,
+                "y": 135
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "SFinalBoss",
+        "name": "SFinal Boss",
+        "variants": [
+          {
+            "time": 1,
+            "width": 30,
+            "height": 16,
+            "anchors": [
+              {
+                "id": "endPos",
+                "x": 19,
+                "y": 8
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "DemoniaMagi",
+        "name": "Magi Ruins",
+        "variants": [
+          {
+            "time": 0,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 24,
+                "y": 20
+              },
+              {
+                "id": "enter",
+                "x": 24,
+                "y": 30
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 1,
+            "width": 40,
+            "height": 40,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 16,
+                "y": 17
+              },
+              {
+                "id": "enter",
+                "x": 15,
+                "y": 37
+              }
+            ],
+            "events": []
+          },
+          {
+            "time": 2,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "magFront",
+                "x": 24,
+                "y": 18
+              },
+              {
+                "id": "enter",
+                "x": 23,
+                "y": 44
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossHub",
+        "name": "Reboss Hub",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "CenterInterior",
+        "name": "Center Interior",
+        "variants": [
+          {
+            "time": 3,
+            "width": 30,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "glitchCenter",
+                "x": 6,
+                "y": 26
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "CenterIsland",
+        "name": "Temporal Research Center",
+        "variants": [
+          {
+            "time": 3,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "centerExit",
+                "x": 34,
+                "y": 21
+              },
+              {
+                "id": "enter",
+                "x": 18,
+                "y": 34
+              },
+              {
+                "id": "magFront",
+                "x": 39,
+                "y": 37
+              }
+            ],
+            "events": [
+              "arrival"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MagiLibrary",
+        "name": "Magi Library",
+        "variants": [
+          {
+            "time": 3,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 19,
+                "y": 45
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MagiIslandAntik",
+        "name": "Magilith Isle",
+        "variants": [
+          {
+            "time": 3,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 12,
+                "y": 32
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MagiMachines",
+        "name": "Molecular Research Center",
+        "variants": [
+          {
+            "time": 3,
+            "width": 120,
+            "height": 60,
+            "anchors": [
+              {
+                "id": "over",
+                "x": 11,
+                "y": 12
+              },
+              {
+                "id": "spawn",
+                "x": 87,
+                "y": 36
+              },
+              {
+                "id": "lock2",
+                "x": 94,
+                "y": 37
+              },
+              {
+                "id": "spawnNpc",
+                "x": 98,
+                "y": 38
+              },
+              {
+                "id": "lock1",
+                "x": 89,
+                "y": 41
+              },
+              {
+                "id": "pre",
+                "x": 87,
+                "y": 51
+              },
+              {
+                "id": "under",
+                "x": 107,
+                "y": 52
+              },
+              {
+                "id": "enter",
+                "x": 29,
+                "y": 53
+              }
+            ],
+            "events": [
+              "pre"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MagiVolcano",
+        "name": "Ancient Volcano",
+        "variants": [
+          {
+            "time": 3,
+            "width": 40,
+            "height": 40,
+            "anchors": [
+              {
+                "id": "house2",
+                "x": 28,
+                "y": 15
+              },
+              {
+                "id": "house1",
+                "x": 8,
+                "y": 18
+              },
+              {
+                "id": "enter",
+                "x": 26,
+                "y": 30
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MagiVolcanoInterior",
+        "name": "Magi Volcano Interior",
+        "variants": [
+          {
+            "time": 3,
+            "width": 40,
+            "height": 40,
+            "anchors": [
+              {
+                "id": "house1",
+                "x": 6,
+                "y": 9
+              },
+              {
+                "id": "house2",
+                "x": 28,
+                "y": 30
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "DemonCamp2",
+        "name": "Demon Camp",
+        "variants": [
+          {
+            "time": 0,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "north",
+                "x": 39,
+                "y": 12
+              },
+              {
+                "id": "ending",
+                "x": 36,
+                "y": 36
+              },
+              {
+                "id": "south",
+                "x": 38,
+                "y": 49
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "DemoniaEnd",
+        "name": "???",
+        "variants": [
+          {
+            "time": 0,
+            "width": 50,
+            "height": 70,
+            "anchors": [
+              {
+                "id": "magusPos",
+                "x": 21,
+                "y": 14
+              },
+              {
+                "id": "startMusicBall",
+                "x": 19,
+                "y": 14
+              },
+              {
+                "id": "endMusicBall",
+                "x": 19,
+                "y": 21
+              },
+              {
+                "id": "finaPos",
+                "x": 23,
+                "y": 36
+              },
+              {
+                "id": "enter",
+                "x": 13,
+                "y": 54
+              }
+            ],
+            "events": [
+              "enter",
+              "fina"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "FortuneCamp",
+        "name": "Bibi's Tent",
+        "variants": [
+          {
+            "time": 2,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 25,
+                "y": 36
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "DemoniaRuins",
+        "name": "Ruins of Demonia",
+        "variants": [
+          {
+            "time": 1,
+            "width": 50,
+            "height": 50,
+            "anchors": [
+              {
+                "id": "ending",
+                "x": 28,
+                "y": 16
+              },
+              {
+                "id": "druins",
+                "x": 19,
+                "y": 22
+              }
+            ],
+            "events": [
+              "menosExit"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RebossCatacombs",
+        "name": "Reboss Catacombs",
+        "variants": [
+          {
+            "time": 2,
+            "width": 150,
+            "height": 155,
+            "anchors": [
+              {
+                "id": "bossSpawn",
+                "x": 21,
+                "y": 60
+              },
+              {
+                "id": "chestSpawn",
+                "x": 21,
+                "y": 61
+              },
+              {
+                "id": "bossLock",
+                "x": 19,
+                "y": 68
+              },
+              {
+                "id": "bossDoorLock",
+                "x": 18,
+                "y": 84
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossPyramid",
+        "name": "Reboss Pyramid",
+        "variants": [
+          {
+            "time": 2,
+            "width": 100,
+            "height": 100,
+            "anchors": [
+              {
+                "id": "timeStone",
+                "x": 43,
+                "y": 43
+              },
+              {
+                "id": "spawn",
+                "x": 51,
+                "y": 47
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossForest",
+        "name": "Reboss Forest",
+        "variants": [
+          {
+            "time": 1,
+            "width": 45,
+            "height": 40,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossShooter",
+        "name": "Reboss Shooter",
+        "variants": [
+          {
+            "time": 2,
+            "width": 52,
+            "height": 512,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossNoria",
+        "name": "Reboss Noria",
+        "variants": [
+          {
+            "time": 0,
+            "width": 55,
+            "height": 85,
+            "anchors": [
+              {
+                "id": "exit",
+                "x": 37,
+                "y": 1
+              },
+              {
+                "id": "boss2",
+                "x": 12,
+                "y": 13
+              },
+              {
+                "id": "boss1",
+                "x": 14,
+                "y": 40
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "RebossDDR",
+        "name": "Reboss DDR",
+        "variants": []
+      },
+      {
+        "id": "_Testchests",
+        "name": " Testchests",
+        "variants": [
+          {
+            "time": 0,
+            "width": 10,
+            "height": 20,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Nakomi",
+        "name": "Nakomi Manor",
+        "variants": [
+          {
+            "time": 0,
+            "width": 49,
+            "height": 49,
+            "anchors": [
+              {
+                "id": "enter",
+                "x": 23,
+                "y": 46
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MenosIsland",
+        "name": "Lost Island",
+        "variants": [
+          {
+            "time": 0,
+            "width": 30,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "menoshouse",
+                "x": 14,
+                "y": 15
+              },
+              {
+                "id": "enter",
+                "x": 14,
+                "y": 21
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "MenosIslandInterior",
+        "name": "Menos Island Interior",
+        "variants": [
+          {
+            "time": 0,
+            "width": 20,
+            "height": 20,
+            "anchors": [
+              {
+                "id": "ent",
+                "x": 9,
+                "y": 12
+              },
+              {
+                "id": "ending",
+                "x": 10,
+                "y": 14
+              }
+            ],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "Allcomplete",
+        "name": "Allcomplete",
+        "variants": [
+          {
+            "time": 2,
+            "width": 150,
+            "height": 150,
+            "anchors": [],
+            "events": []
+          }
+        ]
+      },
+      {
+        "id": "FinalRun",
+        "name": "Final Run",
+        "variants": [
+          {
+            "time": 1,
+            "width": 400,
+            "height": 30,
+            "anchors": [
+              {
+                "id": "finalPos",
+                "x": 131,
+                "y": 22
+              },
+              {
+                "id": "ending",
+                "x": 388,
+                "y": 22
+              }
+            ],
+            "events": []
+          }
+        ]
+      }
+    ],
+    "monsters": [
+      {
+        "id": "WBird",
+        "name": "WBird",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "WFlyRock",
+        "name": "WFly Rock",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "WFlyRockSmall",
+        "name": "WFly Rock Small",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "PSlime",
+        "name": "PSlime",
+        "attack": 40,
+        "defense": 0,
+        "life": 300,
+        "xp": 100
+      },
+      {
+        "id": "PTinySlime",
+        "name": "PTiny Slime",
+        "attack": 25,
+        "defense": 0,
+        "life": 150,
+        "xp": 0
+      },
+      {
+        "id": "PSlimeGreen",
+        "name": "PSlime Green",
+        "attack": 18,
+        "defense": 0,
+        "life": 40,
+        "xp": 5
+      },
+      {
+        "id": "PFireSlime",
+        "name": "PFire Slime",
+        "attack": 24,
+        "defense": 0,
+        "life": 60,
+        "xp": 10
+      },
+      {
+        "id": "PTroll",
+        "name": "Troll",
+        "attack": 67,
+        "defense": 0,
+        "life": 250,
+        "xp": 140
+      },
+      {
+        "id": "PTrollRock",
+        "name": "PTroll Rock",
+        "attack": 62,
+        "defense": 0,
+        "life": 250,
+        "xp": 200
+      },
+      {
+        "id": "PKingTroll",
+        "name": "Big Vicious Troll",
+        "attack": 47,
+        "defense": 0,
+        "life": 3300,
+        "xp": 700
+      },
+      {
+        "id": "PSpider",
+        "name": "PSpider",
+        "attack": 67,
+        "defense": 0,
+        "life": 200,
+        "xp": 200
+      },
+      {
+        "id": "PTotem",
+        "name": "PTotem",
+        "attack": 55,
+        "defense": 0,
+        "life": 250,
+        "xp": 100
+      },
+      {
+        "id": "PRock",
+        "name": "PRock",
+        "attack": 0,
+        "defense": 0,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "PBigRock",
+        "name": "PBig Rock",
+        "attack": 0,
+        "defense": 0,
+        "life": 120,
+        "xp": 0
+      },
+      {
+        "id": "PRat",
+        "name": "PRat",
+        "attack": 20,
+        "defense": 0,
+        "life": 50,
+        "xp": 5
+      },
+      {
+        "id": "PEyeBlob",
+        "name": "PEye Blob",
+        "attack": 27,
+        "defense": 0,
+        "life": 100,
+        "xp": 20
+      },
+      {
+        "id": "PEggPlant",
+        "name": "PEgg Plant",
+        "attack": 17,
+        "defense": 0,
+        "life": 50,
+        "xp": 15
+      },
+      {
+        "id": "PBox",
+        "name": "PBox",
+        "attack": 0,
+        "defense": 0,
+        "life": 400,
+        "xp": 0
+      },
+      {
+        "id": "PBigBox",
+        "name": "PBig Box",
+        "attack": 0,
+        "defense": 0,
+        "life": 800,
+        "xp": 0
+      },
+      {
+        "id": "PFan",
+        "name": "PFan",
+        "attack": 0,
+        "defense": 0,
+        "life": 1000,
+        "xp": 0
+      },
+      {
+        "id": "PBoard",
+        "name": "PBoard",
+        "attack": 0,
+        "defense": 0,
+        "life": 0,
+        "xp": 0
+      },
+      {
+        "id": "PDoor",
+        "name": "PDoor",
+        "attack": 0,
+        "defense": 0,
+        "life": 0,
+        "xp": 0
+      },
+      {
+        "id": "PSewerGrid",
+        "name": "PSewer Grid",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "PPlum",
+        "name": "PPlum",
+        "attack": 30,
+        "defense": 0,
+        "life": 200,
+        "xp": 15
+      },
+      {
+        "id": "PCherry",
+        "name": "PCherry",
+        "attack": 45,
+        "defense": 0,
+        "life": 3700,
+        "xp": 15
+      },
+      {
+        "id": "PBat",
+        "name": "PBat",
+        "attack": 20,
+        "defense": 0,
+        "life": 25,
+        "xp": 8
+      },
+      {
+        "id": "PFish",
+        "name": "PFish",
+        "attack": 18,
+        "defense": 0,
+        "life": 40,
+        "xp": 15
+      },
+      {
+        "id": "PSeaUrchin",
+        "name": "PSea Urchin",
+        "attack": 22,
+        "defense": 0,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "PBeetle",
+        "name": "PBeetle",
+        "attack": 23,
+        "defense": 0,
+        "life": 35,
+        "xp": 7
+      },
+      {
+        "id": "PBlueShell",
+        "name": "PBlue Shell",
+        "attack": 30,
+        "defense": 0,
+        "life": 80,
+        "xp": 30
+      },
+      {
+        "id": "PMushroom",
+        "name": "PMushroom",
+        "attack": 35,
+        "defense": 0,
+        "life": 220,
+        "xp": 35
+      },
+      {
+        "id": "PSpore",
+        "name": "PSpore",
+        "attack": 30,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "PBat2",
+        "name": "PBat2",
+        "attack": 30,
+        "defense": 0,
+        "life": 100,
+        "xp": 25
+      },
+      {
+        "id": "PSpider2",
+        "name": "PSpider2",
+        "attack": 30,
+        "defense": 0,
+        "life": 350,
+        "xp": 30
+      },
+      {
+        "id": "PBigEye",
+        "name": "PBig Eye",
+        "attack": 0,
+        "defense": 0,
+        "life": 0,
+        "xp": 0
+      },
+      {
+        "id": "PEyeBat",
+        "name": "PEye Bat",
+        "attack": 45,
+        "defense": 0,
+        "life": 500,
+        "xp": 100
+      },
+      {
+        "id": "PCloporte",
+        "name": "PCloporte",
+        "attack": 40,
+        "defense": 0,
+        "life": 700,
+        "xp": 150
+      },
+      {
+        "id": "PShell",
+        "name": "PShell",
+        "attack": 40,
+        "defense": 0,
+        "life": 350,
+        "xp": 80
+      },
+      {
+        "id": "PPustule",
+        "name": "PPustule",
+        "attack": 50,
+        "defense": 0,
+        "life": 600,
+        "xp": 80
+      },
+      {
+        "id": "PDragoon",
+        "name": "PDragoon",
+        "attack": 50,
+        "defense": 0,
+        "life": 100,
+        "xp": 250
+      },
+      {
+        "id": "PFlyingMine",
+        "name": "PFlying Mine",
+        "attack": 70,
+        "defense": 0,
+        "life": 10000,
+        "xp": 0
+      },
+      {
+        "id": "PBigthingBlock",
+        "name": "PBigthing Block",
+        "attack": 0,
+        "defense": 0,
+        "life": 1000,
+        "xp": 0
+      },
+      {
+        "id": "PHybrid",
+        "name": "PHybrid",
+        "attack": 50,
+        "defense": 0,
+        "life": 5000,
+        "xp": 0
+      },
+      {
+        "id": "ZTinySlime",
+        "name": "ZTiny Slime",
+        "attack": 0,
+        "defense": 0,
+        "life": 5,
+        "xp": 0
+      },
+      {
+        "id": "ZSlime",
+        "name": "ZSlime",
+        "attack": 10,
+        "defense": 0,
+        "life": 8,
+        "xp": 1
+      },
+      {
+        "id": "ZSlime2",
+        "name": "ZSlime2",
+        "attack": 25,
+        "defense": 0,
+        "life": 50,
+        "xp": 5
+      },
+      {
+        "id": "ZMushroom",
+        "name": "ZMushroom",
+        "attack": 13,
+        "defense": 0,
+        "life": 10,
+        "xp": 2
+      },
+      {
+        "id": "ZMushroom2",
+        "name": "ZMushroom2",
+        "attack": 28,
+        "defense": 0,
+        "life": 60,
+        "xp": 5
+      },
+      {
+        "id": "ZRock",
+        "name": "ZRock",
+        "attack": 15,
+        "defense": 0,
+        "life": 13,
+        "xp": 3
+      },
+      {
+        "id": "ZSquirrel",
+        "name": "ZSquirrel",
+        "attack": 16,
+        "defense": 0,
+        "life": 10,
+        "xp": 2
+      },
+      {
+        "id": "ZSquirrel2",
+        "name": "ZSquirrel2",
+        "attack": 25,
+        "defense": 0,
+        "life": 45,
+        "xp": 5
+      },
+      {
+        "id": "ZGuard",
+        "name": "ZGuard",
+        "attack": 15,
+        "defense": 0,
+        "life": 20,
+        "xp": 2
+      },
+      {
+        "id": "ZGuardSleep",
+        "name": "ZGuard Sleep",
+        "attack": 0,
+        "defense": 0,
+        "life": 30,
+        "xp": 0
+      },
+      {
+        "id": "ZCaptain",
+        "name": "ZCaptain",
+        "attack": 100,
+        "defense": 0,
+        "life": 200,
+        "xp": 0
+      },
+      {
+        "id": "ZMushBoss",
+        "name": "Forest Guardian",
+        "attack": 18,
+        "defense": 0,
+        "life": 60,
+        "xp": 15
+      },
+      {
+        "id": "ZBear",
+        "name": "ZBear",
+        "attack": 20,
+        "defense": 0,
+        "life": 21,
+        "xp": 3
+      },
+      {
+        "id": "ZBearCol",
+        "name": "ZBear Col",
+        "attack": 20,
+        "defense": 0,
+        "life": 100,
+        "xp": 5
+      },
+      {
+        "id": "ZSpider",
+        "name": "ZSpider",
+        "attack": 15,
+        "defense": 0,
+        "life": 18,
+        "xp": 2
+      },
+      {
+        "id": "ZSpirit",
+        "name": "ZSpirit",
+        "attack": 18,
+        "defense": 0,
+        "life": 18,
+        "xp": 4
+      },
+      {
+        "id": "ZBush",
+        "name": "ZBush",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZButterfly",
+        "name": "ZButterfly",
+        "attack": 0,
+        "defense": 0,
+        "life": 0,
+        "xp": 0
+      },
+      {
+        "id": "ZMenos",
+        "name": "Zmenos",
+        "attack": 20,
+        "defense": 0,
+        "life": 150,
+        "xp": 0
+      },
+      {
+        "id": "ZManimal",
+        "name": "ZManimal",
+        "attack": 15,
+        "defense": 0,
+        "life": 20,
+        "xp": 0
+      },
+      {
+        "id": "ZTotemWood",
+        "name": "ZTotem Wood",
+        "attack": 20,
+        "defense": 0,
+        "life": 50,
+        "xp": 3
+      },
+      {
+        "id": "ZChicken",
+        "name": "ZChicken",
+        "attack": 0,
+        "defense": 0,
+        "life": 0,
+        "xp": 0
+      },
+      {
+        "id": "ZBigRock",
+        "name": "ZBig Rock",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZMamut",
+        "name": "ZMamut",
+        "attack": 0,
+        "defense": 0,
+        "life": 1000,
+        "xp": 0
+      },
+      {
+        "id": "ZBabyMamut",
+        "name": "ZBaby Mamut",
+        "attack": 0,
+        "defense": 0,
+        "life": 0,
+        "xp": 0
+      },
+      {
+        "id": "ZDeadTree",
+        "name": "ZDead Tree",
+        "attack": 0,
+        "defense": 0,
+        "life": 50,
+        "xp": 0
+      },
+      {
+        "id": "ZFallingRock",
+        "name": "ZFalling Rock",
+        "attack": 20,
+        "defense": 0,
+        "life": 15,
+        "xp": 0
+      },
+      {
+        "id": "ZPot",
+        "name": "ZPot",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZBreaker",
+        "name": "ZBreaker",
+        "attack": 35,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZSkeleton",
+        "name": "ZSkeleton",
+        "attack": 28,
+        "defense": 0,
+        "life": 30,
+        "xp": 20
+      },
+      {
+        "id": "ZStoneSentinel",
+        "name": "ZStone Sentinel",
+        "attack": 30,
+        "defense": 0,
+        "life": 60,
+        "xp": 25
+      },
+      {
+        "id": "ZFirebird",
+        "name": "ZFirebird",
+        "attack": 20,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZJumpingFish",
+        "name": "ZJumping Fish",
+        "attack": 25,
+        "defense": 0,
+        "life": 50,
+        "xp": 15
+      },
+      {
+        "id": "ZDarkSlime",
+        "name": "ZDark Slime",
+        "attack": 25,
+        "defense": 0,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "ZBombRock",
+        "name": "ZBomb Rock",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZBombRockPlum",
+        "name": "ZBomb Rock Plum",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZDynamiteRock",
+        "name": "ZDynamite Rock",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZCreeper",
+        "name": "ZCreeper",
+        "attack": 50,
+        "defense": 0,
+        "life": 400,
+        "xp": 80
+      },
+      {
+        "id": "ZRat",
+        "name": "ZRat",
+        "attack": 50,
+        "defense": 0,
+        "life": 1,
+        "xp": 40
+      },
+      {
+        "id": "ZRatBomb",
+        "name": "ZRat Bomb",
+        "attack": 50,
+        "defense": 0,
+        "life": 1,
+        "xp": 50
+      },
+      {
+        "id": "ZShell",
+        "name": "ZShell",
+        "attack": 50,
+        "defense": 0,
+        "life": 1,
+        "xp": 60
+      },
+      {
+        "id": "ZMole",
+        "name": "ZMole",
+        "attack": 40,
+        "defense": 0,
+        "life": 1,
+        "xp": 60
+      },
+      {
+        "id": "ZPlum",
+        "name": "Plum",
+        "attack": 40,
+        "defense": 0,
+        "life": 400,
+        "xp": 0
+      },
+      {
+        "id": "ZPlum2",
+        "name": "Plum",
+        "attack": 40,
+        "defense": 0,
+        "life": 2000,
+        "xp": 0
+      },
+      {
+        "id": "ZWallMenos",
+        "name": "ZWall Menos",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZWallMenosJail",
+        "name": "ZWall Menos Jail",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZJabba",
+        "name": "ZJabba",
+        "attack": 30,
+        "defense": 0,
+        "life": 1500,
+        "xp": 0
+      },
+      {
+        "id": "ZGhost",
+        "name": "ZGhost",
+        "attack": 22,
+        "defense": 0,
+        "life": 100,
+        "xp": 10
+      },
+      {
+        "id": "ZZombie",
+        "name": "ZZombie",
+        "attack": 22,
+        "defense": 0,
+        "life": 200,
+        "xp": 10
+      },
+      {
+        "id": "ZEyePlant",
+        "name": "ZEye Plant",
+        "attack": 22,
+        "defense": 0,
+        "life": 50,
+        "xp": 10
+      },
+      {
+        "id": "ZEctoplasm",
+        "name": "ZEctoplasm",
+        "attack": 22,
+        "defense": 0,
+        "life": 70,
+        "xp": 10
+      },
+      {
+        "id": "ZBlueFlame",
+        "name": "ZBlue Flame",
+        "attack": 10,
+        "defense": 0,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "ZSoldierBot",
+        "name": "ZSoldier Bot",
+        "attack": 27,
+        "defense": 0,
+        "life": 65,
+        "xp": 10
+      },
+      {
+        "id": "ZSpiderBot",
+        "name": "ZSpider Bot",
+        "attack": 25,
+        "defense": 0,
+        "life": 40,
+        "xp": 5
+      },
+      {
+        "id": "ZTankBot",
+        "name": "ZTank Bot",
+        "attack": 40,
+        "defense": 0,
+        "life": 100,
+        "xp": 30
+      },
+      {
+        "id": "ZTurret",
+        "name": "ZTurret",
+        "attack": 30,
+        "defense": 0,
+        "life": 60,
+        "xp": 15
+      },
+      {
+        "id": "ZMotherBrain",
+        "name": "ZMother Brain",
+        "attack": 45,
+        "defense": 0,
+        "life": 300,
+        "xp": 50
+      },
+      {
+        "id": "ZLaboDebris",
+        "name": "ZLabo Debris",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZGlitchPot",
+        "name": "ZGlitch Pot",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZTop",
+        "name": "ZTop",
+        "attack": 30,
+        "defense": 0,
+        "life": 400,
+        "xp": 200
+      },
+      {
+        "id": "ZDarkKuro",
+        "name": "Zdark kuro",
+        "attack": 30,
+        "defense": 0,
+        "life": 2000,
+        "xp": 300
+      },
+      {
+        "id": "ZDarkKuroContainer",
+        "name": "Zdark kuro container",
+        "attack": 30,
+        "defense": 0,
+        "life": 6000,
+        "xp": 0
+      },
+      {
+        "id": "ZReno",
+        "name": "Reno",
+        "attack": 35,
+        "defense": 0,
+        "life": 1600,
+        "xp": 0
+      },
+      {
+        "id": "ZHybrid",
+        "name": "ZHybrid",
+        "attack": 0,
+        "defense": 0,
+        "life": 24000,
+        "xp": 0
+      },
+      {
+        "id": "ZCrystal",
+        "name": "ZCrystal",
+        "attack": 40,
+        "defense": 0,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "ZBot",
+        "name": "ZBot",
+        "attack": 40,
+        "defense": 0,
+        "life": 1,
+        "xp": 50
+      },
+      {
+        "id": "ZAntikBot",
+        "name": "ZAntik Bot",
+        "attack": 1,
+        "defense": 0,
+        "life": 30,
+        "xp": 0
+      },
+      {
+        "id": "ZBot2",
+        "name": "ZBot2",
+        "attack": 50,
+        "defense": 0,
+        "life": 1,
+        "xp": 100
+      },
+      {
+        "id": "ZChicken2",
+        "name": "ZChicken2",
+        "attack": 65,
+        "defense": 0,
+        "life": 130,
+        "xp": 20
+      },
+      {
+        "id": "TDemonSoldier",
+        "name": "Demon",
+        "attack": 35,
+        "defense": 20,
+        "life": 50,
+        "xp": 0
+      },
+      {
+        "id": "TDemonArcher",
+        "name": "Demon Archer",
+        "attack": 35,
+        "defense": 20,
+        "life": 40,
+        "xp": 0
+      },
+      {
+        "id": "TPirate1a",
+        "name": "Pirate",
+        "attack": 18,
+        "defense": 0,
+        "life": 25,
+        "xp": 0
+      },
+      {
+        "id": "TPirate1b",
+        "name": "Pirate",
+        "attack": 18,
+        "defense": 0,
+        "life": 25,
+        "xp": 0
+      },
+      {
+        "id": "TPirate1c",
+        "name": "Pirate",
+        "attack": 18,
+        "defense": 0,
+        "life": 25,
+        "xp": 0
+      },
+      {
+        "id": "TPirate2a",
+        "name": "Pirate",
+        "attack": 20,
+        "defense": 0,
+        "life": 27,
+        "xp": 0
+      },
+      {
+        "id": "TPirate2b",
+        "name": "Pirate",
+        "attack": 20,
+        "defense": 0,
+        "life": 27,
+        "xp": 0
+      },
+      {
+        "id": "TPirateBoss",
+        "name": "Captain",
+        "attack": 20,
+        "defense": 0,
+        "life": 50,
+        "xp": 0
+      },
+      {
+        "id": "SHitotsume",
+        "name": "SHitotsume",
+        "attack": 30,
+        "defense": 0,
+        "life": 300,
+        "xp": 10
+      },
+      {
+        "id": "SMushi",
+        "name": "SMushi",
+        "attack": 30,
+        "defense": 0,
+        "life": 200,
+        "xp": 10
+      },
+      {
+        "id": "SBombo",
+        "name": "SBombo",
+        "attack": 30,
+        "defense": 0,
+        "life": 400,
+        "xp": 15
+      },
+      {
+        "id": "SPumpkin",
+        "name": "SPumpkin",
+        "attack": 30,
+        "defense": 0,
+        "life": 120,
+        "xp": 5
+      },
+      {
+        "id": "SPumpkinBoss",
+        "name": "Biblus",
+        "attack": 35,
+        "defense": 0,
+        "life": 9000,
+        "xp": 50
+      },
+      {
+        "id": "SHitotsumeBoss",
+        "name": "Saxu",
+        "attack": 35,
+        "defense": 0,
+        "life": 9000,
+        "xp": 50
+      },
+      {
+        "id": "SMushiBoss",
+        "name": "Scizor",
+        "attack": 36,
+        "defense": 0,
+        "life": 9000,
+        "xp": 50
+      },
+      {
+        "id": "SHybrid",
+        "name": "SHybrid",
+        "attack": 60,
+        "defense": 0,
+        "life": 7500,
+        "xp": 0
+      },
+      {
+        "id": "SArmorCorpse",
+        "name": "SArmor Corpse",
+        "attack": 50,
+        "defense": 0,
+        "life": 1000,
+        "xp": 0
+      },
+      {
+        "id": "SArmorHead",
+        "name": "SArmor Head",
+        "attack": 50,
+        "defense": 0,
+        "life": 5000,
+        "xp": 0
+      },
+      {
+        "id": "SArmorChest",
+        "name": "SArmor Chest",
+        "attack": 50,
+        "defense": 0,
+        "life": 6000,
+        "xp": 0
+      },
+      {
+        "id": "SArmorMouth",
+        "name": "SArmor Mouth",
+        "attack": 50,
+        "defense": 0,
+        "life": 5000,
+        "xp": 0
+      },
+      {
+        "id": "SHybridBot",
+        "name": "SHybrid Bot",
+        "attack": 55,
+        "defense": 0,
+        "life": 500,
+        "xp": 0
+      },
+      {
+        "id": "SLaserBot",
+        "name": "SLaser Bot",
+        "attack": 55,
+        "defense": 0,
+        "life": 1200,
+        "xp": 0
+      },
+      {
+        "id": "SHybridAmibe",
+        "name": "SHybrid Amibe",
+        "attack": 50,
+        "defense": 0,
+        "life": 200,
+        "xp": 0
+      },
+      {
+        "id": "BPirateBlack",
+        "name": "BPirate Black",
+        "attack": 4,
+        "defense": 0,
+        "life": 8,
+        "xp": 50
+      },
+      {
+        "id": "BPirateRed",
+        "name": "BPirate Red",
+        "attack": 6,
+        "defense": 0,
+        "life": 12,
+        "xp": 50
+      },
+      {
+        "id": "BPirateLee",
+        "name": "BPirate Lee",
+        "attack": 6,
+        "defense": 0,
+        "life": 15,
+        "xp": 150
+      },
+      {
+        "id": "BPirateGirl",
+        "name": "BPirate Girl",
+        "attack": 6,
+        "defense": 0,
+        "life": 18,
+        "xp": 100
+      },
+      {
+        "id": "BBox",
+        "name": "BBox",
+        "attack": 0,
+        "defense": 0,
+        "life": 3,
+        "xp": 0
+      },
+      {
+        "id": "BPirateBig",
+        "name": "BPirate Big",
+        "attack": 10,
+        "defense": 0,
+        "life": 15,
+        "xp": 150
+      },
+      {
+        "id": "BPirateBoss",
+        "name": "Captain Ababa",
+        "attack": 10,
+        "defense": 0,
+        "life": 60,
+        "xp": 500
+      },
+      {
+        "id": "SFProphet",
+        "name": "SFProphet",
+        "attack": 1,
+        "defense": 0,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "TRecruit",
+        "name": "Recruit",
+        "attack": 30,
+        "defense": 15,
+        "life": 40,
+        "xp": 0
+      },
+      {
+        "id": "TBadRecruit",
+        "name": "Recruit",
+        "attack": 30,
+        "defense": 15,
+        "life": 40,
+        "xp": 0
+      },
+      {
+        "id": "TSoldier",
+        "name": "Soldier",
+        "attack": 35,
+        "defense": 20,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "TBadSoldier",
+        "name": "Soldier",
+        "attack": 35,
+        "defense": 20,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "TArcher",
+        "name": "Archer",
+        "attack": 40,
+        "defense": 10,
+        "life": 40,
+        "xp": 0
+      },
+      {
+        "id": "TBadArcher",
+        "name": "Archer",
+        "attack": 40,
+        "defense": 10,
+        "life": 40,
+        "xp": 0
+      },
+      {
+        "id": "TCatapult",
+        "name": "Catapult",
+        "attack": 40,
+        "defense": 40,
+        "life": 10,
+        "xp": 0
+      },
+      {
+        "id": "TBadCatapult",
+        "name": "Catapult",
+        "attack": 40,
+        "defense": 40,
+        "life": 10,
+        "xp": 0
+      },
+      {
+        "id": "TPaladin",
+        "name": "Paladin",
+        "attack": 42,
+        "defense": 25,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "TBadPaladin",
+        "name": "Paladin",
+        "attack": 42,
+        "defense": 25,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "TKnight",
+        "name": "Knight",
+        "attack": 50,
+        "defense": 15,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "TBadKnight",
+        "name": "Knight",
+        "attack": 40,
+        "defense": 15,
+        "life": 60,
+        "xp": 0
+      },
+      {
+        "id": "TDalkin",
+        "name": "TDalkin",
+        "attack": 40,
+        "defense": 50,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "TLieutenant",
+        "name": "Lieutenant",
+        "attack": 40,
+        "defense": 30,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "TMagi",
+        "name": "Wizard",
+        "attack": 60,
+        "defense": 20,
+        "life": 20,
+        "xp": 0
+      },
+      {
+        "id": "TGreatPriest",
+        "name": "TGreat Priest",
+        "attack": 65,
+        "defense": 30,
+        "life": 50,
+        "xp": 0
+      },
+      {
+        "id": "TDemonFriend",
+        "name": "Matchos",
+        "attack": 50,
+        "defense": 30,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "TBadDemonFriend",
+        "name": "Matchos",
+        "attack": 50,
+        "defense": 30,
+        "life": 100,
+        "xp": 0
+      },
+      {
+        "id": "TBush",
+        "name": "Bush",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "SBlocker",
+        "name": "SBlocker",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "SDragon",
+        "name": "SDragon",
+        "attack": 1000,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "SEvil",
+        "name": "SEvil",
+        "attack": 1000,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "SMushRed",
+        "name": "SMush Red",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "SMushBlue",
+        "name": "SMush Blue",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "SRunner",
+        "name": "SRunner",
+        "attack": 1,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      },
+      {
+        "id": "ZWindSpiritIce",
+        "name": "ZWind Spirit Ice",
+        "attack": 50,
+        "defense": 0,
+        "life": 200,
+        "xp": 50
+      },
+      {
+        "id": "ZEyePlantIce",
+        "name": "ZEye Plant Ice",
+        "attack": 50,
+        "defense": 0,
+        "life": 400,
+        "xp": 30
+      },
+      {
+        "id": "ZEctoplasmIce",
+        "name": "ZEctoplasm Ice",
+        "attack": 50,
+        "defense": 0,
+        "life": 400,
+        "xp": 30
+      },
+      {
+        "id": "ZBushIce",
+        "name": "ZBush Ice",
+        "attack": 0,
+        "defense": 0,
+        "life": 1,
+        "xp": 0
+      }
+    ],
+    "level_rules": [
+      {
+        "startLevel": 1,
+        "attackBase": 10,
+        "defenseBase": 10,
+        "lifeBase": 28,
+        "attackIncr": 1.2,
+        "defenseIncr": 0.8,
+        "lifeIncr": 3,
+        "speed": 6
+      }
+    ]
+  }
+}
