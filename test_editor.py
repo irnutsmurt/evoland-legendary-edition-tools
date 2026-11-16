@@ -3,6 +3,7 @@ import sys, tempfile, unittest, json
 from pathlib import Path
 from save_engine import *
 from catalog import SLOTS
+from test_discovery import DiscoveryTests
 ROOT=Path(__file__).parent
 DB=json.loads((ROOT/'catalog.json').read_text(encoding='utf8'))
 def envelope(body):return body+'#'+checksum(body)
@@ -57,6 +58,6 @@ def check_real(path):
             k,(x,y)=next(iter(ps.items()));r=edit(raw,coords={k:(x+0.25,y)});assert positions(unpack(r)[1])[k]==(x+0.25,y)
     print('Real save checks passed:',Path(path).name,g)
 if __name__=='__main__':
-    paths=sys.argv[1:];suite=unittest.defaultTestLoader.loadTestsFromTestCase(Tests);result=unittest.TextTestRunner(verbosity=2).run(suite)
+    paths=sys.argv[1:];suite=unittest.TestSuite([unittest.defaultTestLoader.loadTestsFromTestCase(c) for c in (Tests,DiscoveryTests)]);result=unittest.TextTestRunner(verbosity=2).run(suite)
     if not result.wasSuccessful():raise SystemExit(1)
     for path in paths:check_real(path)

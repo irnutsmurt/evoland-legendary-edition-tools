@@ -2,30 +2,15 @@
 import tkinter as tk
 from tkinter import ttk,filedialog,messagebox
 from pathlib import Path
-import os,sys,re
 from patch_engine import PATCH_INFO,inspect,apply,PatchError
-
-def discover():
-    home=Path.home();roots=[home/'.steam/steam',home/'.local/share/Steam',home/'.var/app/com.valvesoftware.Steam/.local/share/Steam']
-    if sys.platform=='win32':roots.extend(Path(os.environ.get(v,'C:/Program Files (x86)'))/'Steam' for v in ('ProgramFiles(x86)','ProgramFiles'))
-    libraries=[]
-    for root in roots:
-        libraries.append(root)
-        try:
-            txt=(root/'steamapps/libraryfolders.vdf').read_text(encoding='utf8');libraries.extend(Path(s.replace('\\\\','\\')) for s in re.findall(r'"path"\s+"([^"]+)"',txt))
-        except OSError:pass
-    for root in libraries:
-        for name in ('Evoland Legendary Edition','Evoland 2'):
-            p=root/'steamapps/common'/name
-            if any((p/n).is_file() for n in ('hlboot.dat','sdlboot.dat')):return str(p)
-    return ''
+from game_discovery import discover, is_installation
 
 class PatchWindow(tk.Toplevel):
     def __init__(self,parent):
         super().__init__(parent);self.title('Evoland Toolkit — Game Patches');self.geometry('810x580');self.minsize(720,510);self.transient(parent)
         f=ttk.Frame(self,padding=18);f.pack(fill='both',expand=True)
         ttk.Label(f,text='Game patches',style='Title.TLabel').pack(anchor='w');ttk.Label(f,text='Evoland 2 · Experimental community patches',style='Heading.TLabel').pack(anchor='w',pady=(4,5));ttk.Label(f,text='Only the verified Legendary Edition builds are supported. Close the game before applying or restoring patches.',wraplength=740).pack(anchor='w',pady=(0,12))
-        ttk.Label(f,text='Game installation folder').pack(anchor='w');self.path=tk.StringVar(value=discover());row=ttk.Frame(f);row.pack(fill='x',pady=(4,6));ttk.Entry(row,textvariable=self.path).pack(side='left',fill='x',expand=True);ttk.Button(row,text='Browse…',command=self.browse).pack(side='left',padx=(6,0));ttk.Button(row,text='Check',command=self.check).pack(side='left',padx=(6,0));self.info=tk.StringVar(value='Select the folder containing hlboot.dat or sdlboot.dat.');ttk.Label(f,textvariable=self.info,wraplength=740,justify='left').pack(anchor='w',pady=(3,12))
+        ttk.Label(f,text='Game installation folder').pack(anchor='w');self.path=tk.StringVar(value=str(getattr(parent,'installation',None) or discover()));row=ttk.Frame(f);row.pack(fill='x',pady=(4,6));ttk.Entry(row,textvariable=self.path).pack(side='left',fill='x',expand=True);ttk.Button(row,text='Browse…',command=self.browse).pack(side='left',padx=(6,0));ttk.Button(row,text='Check',command=self.check).pack(side='left',padx=(6,0));self.info=tk.StringVar(value='Select the folder containing hlboot.dat or sdlboot.dat.');ttk.Label(f,textvariable=self.info,wraplength=740,justify='left').pack(anchor='w',pady=(3,12))
         self.vars={};self.controls=[]
         for k,(title,desc) in PATCH_INFO.items():
             box=ttk.LabelFrame(f,text=title,padding=10);box.pack(fill='x',pady=(0,8));v=tk.BooleanVar(value=False);self.vars[k]=v;c=ttk.Checkbutton(box,text='Enable experimental patch',variable=v,command=self.enable_buttons);c.pack(anchor='w');self.controls.append(c);ttk.Label(box,text=desc,wraplength=700,justify='left').pack(anchor='w',pady=(4,0))
@@ -37,8 +22,10 @@ class PatchWindow(tk.Toplevel):
         for c in self.controls:c.configure(state='normal' if self.ready else 'disabled')
         self.applybtn.configure(state='normal' if self.ready else 'disabled');self.restorebtn.configure(state='normal' if self.ready and any(s['state'] for s in self.states) else 'disabled')
     def browse(self):
-        p=filedialog.askdirectory(parent=self,title='Select Evoland Legendary Edition installation folder')
-        if p:self.path.set(p);self.check()
+        p=filedialog.askdirectory(parent=self,title='Select Evoland Legendary Edition installation folder', **({'initialdir':self.path.get()} if self.path.get() else {}))
+        if p:
+            if is_installation(p) and hasattr(self.master,'set_installation'):self.master.set_installation(p)
+            self.path.set(p);self.check()
     def check(self):
         self.ready=False;self.states=[]
         try:

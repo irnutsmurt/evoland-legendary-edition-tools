@@ -2,21 +2,131 @@
 import tkinter as tk
 from tkinter import ttk,filedialog,messagebox,simpledialog
 from pathlib import Path
-import json,sys,math
+import json,sys,math,os
 from save_engine import *
 from catalog import extract,SLOTS,TIMES,human
 from patch_gui import PatchWindow
+from game_discovery import discover_installations, is_installation, remember_installation, save_directory
 ROOT=Path(__file__).resolve().parent
+
+# Use clam on all platforms so native ttk drawing cannot override the palette.
+PALETTES = {
+    'dark': dict(bg='#20242b', panel='#292f38', field='#171b21', text='#e5e9f0',
+                 muted='#9aa5b5', border='#495563', hover='#3b4655',
+                 accent='#4d78b6', selected='#305783', selected_text='#ffffff'),
+    'light': dict(bg='#f1f3f6', panel='#e3e7ed', field='#ffffff', text='#202733',
+                  muted='#667384', border='#a4afbd', hover='#d4deeb',
+                  accent='#426da8', selected='#3265a3', selected_text='#ffffff'),
+}
+
+def theme_path():
+    base = os.environ.get('APPDATA') if sys.platform == 'win32' else os.environ.get('XDG_CONFIG_HOME')
+    return (Path(base) if base else Path.home() / '.config') / 'EvolandToolkit' / 'theme.txt'
+
+def load_theme():
+    try:
+        value = theme_path().read_text(encoding='utf8').strip()
+        return value if value in PALETTES else 'dark'
+    except OSError:
+        return 'dark'
+
+def apply_theme(root, mode):
+    p = PALETTES[mode]
+    bg, panel, field, fg, muted, border, hover, accent, selected, white = (
+        p[k] for k in ('bg','panel','field','text','muted','border','hover','accent','selected','selected_text'))
+    style = ttk.Style(root)
+    style.theme_use('clam')
+    style.configure('.', background=bg, foreground=fg, fieldbackground=field,
+                    bordercolor=border, lightcolor=border, darkcolor=border,
+                    troughcolor=field, selectbackground=selected, selectforeground=white,
+                    insertcolor=fg, focuscolor=accent, arrowcolor=fg)
+    style.configure('TFrame', background=bg)
+    style.configure('TLabel', background=bg, foreground=fg)
+    style.configure('Title.TLabel', font=('TkDefaultFont',18,'bold'))
+    style.configure('Heading.TLabel', font=('TkDefaultFont',12,'bold'))
+    style.configure('TButton', background=panel, foreground=fg, padding=6)
+    style.map('TButton', background=[('disabled',bg),('pressed',selected),('active',hover)],
+              foreground=[('disabled',muted),('pressed',white)])
+    style.configure('TEntry', fieldbackground=field, foreground=fg, insertcolor=fg)
+    style.map('TEntry', fieldbackground=[('disabled',panel),('readonly',panel)],
+              foreground=[('disabled',muted)], bordercolor=[('focus',accent)])
+    style.configure('TCombobox', background=panel, fieldbackground=field, foreground=fg,
+                    insertcolor=fg, arrowcolor=fg)
+    style.map('TCombobox', fieldbackground=[('disabled',panel),('readonly',field)],
+              foreground=[('disabled',muted),('readonly',fg)],
+              background=[('active',hover)], arrowcolor=[('disabled',muted)],
+              bordercolor=[('focus',accent)])
+    style.configure('TCheckbutton', background=bg, foreground=fg, indicatorbackground=field,
+                    indicatorforeground=white, upperbordercolor=border, lowerbordercolor=border)
+    style.map('TCheckbutton', background=[('active',bg)], foreground=[('disabled',muted)],
+              indicatorbackground=[('disabled',panel),('selected',accent),('active',hover)],
+              indicatorforeground=[('disabled',muted),('selected',white)])
+    style.configure('TLabelframe', background=bg, bordercolor=border)
+    style.configure('TLabelframe.Label', background=bg, foreground=fg)
+    style.configure('TNotebook', background=bg, bordercolor=border)
+    style.configure('TNotebook.Tab', background=panel, foreground=fg, padding=(12,8),
+                    bordercolor=border, lightcolor=border, darkcolor=border)
+    style.map('TNotebook.Tab', background=[('selected',selected),('active',hover)],
+              foreground=[('selected',white),('disabled',muted)])
+    style.configure('Treeview', background=field, fieldbackground=field, foreground=fg,
+                    rowheight=26, bordercolor=border)
+    style.map('Treeview', background=[('selected',selected)], foreground=[('selected',white)])
+    style.configure('Treeview.Heading', background=panel, foreground=fg, relief='flat')
+    style.map('Treeview.Heading', background=[('active',hover)])
+    for name in ('Vertical.TScrollbar','Horizontal.TScrollbar'):
+        style.configure(name, background=panel, troughcolor=field, arrowcolor=fg,
+                        bordercolor=border, gripcount=0)
+        style.map(name, background=[('active',hover),('pressed',selected)])
+    style.configure('TSeparator', background=border)
+
+    # Tk (not ttk) widgets and non-native dialogs need their own colors.
+    for name, value in {'background':bg,'foreground':fg,'activeBackground':hover,
+                        'activeForeground':fg,'selectBackground':selected,'selectForeground':white,
+                        'insertBackground':fg,'highlightBackground':border,'highlightColor':accent,
+                        'disabledForeground':muted}.items():
+        root.option_add('*'+name, value)
+    for widget_class in ('Text','Entry','Listbox'):
+        root.option_add(f'*{widget_class}.background',field)
+        root.option_add(f'*{widget_class}.foreground',fg)
+    for name,value in {'background':field,'foreground':fg,'selectBackground':selected,
+                       'selectForeground':white}.items():
+        root.option_add('*TCombobox*Listbox.'+name,value)
+
+    def refresh(widget):
+        if isinstance(widget,(tk.Tk,tk.Toplevel)):
+            widget.configure(background=bg)
+        elif isinstance(widget,(tk.Text,tk.Entry,tk.Listbox)):
+            values=dict(background=field,foreground=fg,selectbackground=selected,
+                        selectforeground=white,insertbackground=fg,highlightbackground=border,
+                        highlightcolor=accent)
+            widget.configure(**{k:v for k,v in values.items() if k in widget.keys()})
+        elif isinstance(widget,ttk.Combobox):
+            # Recolor any dropdown created before the theme was switched.
+            popup=str(widget)+'.popdown.f.l'
+            if root.tk.call('winfo','exists',popup):
+                root.tk.call(popup,'configure','-background',field,'-foreground',fg,
+                             '-selectbackground',selected,'-selectforeground',white)
+        for child in widget.winfo_children():
+            refresh(child)
+    refresh(root)
+
 class App(tk.Tk):
     def __init__(self):
         super().__init__();self.title('Evoland Toolkit');self.geometry('1120x760');self.minsize(850,580)
         self.catalog=json.loads((ROOT/'catalog.json').read_text(encoding='utf8'));self.path=None;self.original=self.draft=None;self.state=None;self.game=None;self.history=[];self.tables={};self.statvars={}
-        style=ttk.Style(self);
-        if 'clam' in style.theme_names() and self.tk.call('tk','windowingsystem')=='x11':style.theme_use('clam')
-        style.configure('Title.TLabel',font=('TkDefaultFont',18,'bold'));style.configure('Heading.TLabel',font=('TkDefaultFont',12,'bold'));style.configure('Treeview',rowheight=26);style.configure('TButton',padding=6);style.configure('TNotebook.Tab',padding=(12,8))
+        self.installation=None
+        self.installation_label=tk.StringVar()
+        self.theme_mode=load_theme()
+        self.theme_button_text=tk.StringVar()
+        self.set_theme(self.theme_mode, persist=False)
         outer=ttk.Frame(self,padding=16);outer.pack(fill='both',expand=True)
-        head=ttk.Frame(outer);head.pack(fill='x');ttk.Label(head,text='Evoland Toolkit',style='Title.TLabel').pack(side='left');self.game_label=tk.StringVar(value='No save loaded');ttk.Button(head,text='Game Patches…',command=self.open_patches).pack(side='right',padx=(12,0));ttk.Label(head,textvariable=self.game_label,style='Heading.TLabel').pack(side='right')
+        head=ttk.Frame(outer);head.pack(fill='x');ttk.Label(head,text='Evoland Toolkit',style='Title.TLabel').pack(side='left');self.game_label=tk.StringVar(value='No save loaded');ttk.Button(head,textvariable=self.theme_button_text,command=self.toggle_theme).pack(side='right',padx=(12,0));ttk.Button(head,text='Game Patches…',command=self.open_patches).pack(side='right',padx=(12,0));ttk.Label(head,textvariable=self.game_label,style='Heading.TLabel').pack(side='right')
         self.summary=tk.StringVar(value='Open an Evoland 1 or Evoland 2 .sav file to get started.');ttk.Label(outer,textvariable=self.summary,wraplength=950).pack(anchor='w',pady=(5,12))
+        installbar=ttk.Frame(outer);installbar.pack(fill='x',pady=(0,8))
+        ttk.Label(installbar,textvariable=self.installation_label,wraplength=720).pack(side='left',fill='x',expand=True)
+        ttk.Button(installbar,text='Rescan',command=lambda:self.detect_installation(True)).pack(side='right',padx=(5,0))
+        ttk.Button(installbar,text='Choose game folder…',command=self.choose_installation).pack(side='right',padx=(5,0))
+        self.detect_installation()
         bar=ttk.Frame(outer);bar.pack(fill='x',pady=(0,10));self.actions={}
         for text,fn in [('Open save…',self.open_dialog),('Save as…',lambda:self.save(True)),('Overwrite save',lambda:self.save(False)),('Undo',self.undo),('Review changes',self.review),('Reset edits',self.reset),('Import game catalogs…',self.import_catalog)]:
             b=ttk.Button(bar,text=text,command=fn);b.pack(side='left',padx=(0,5));self.actions[text]=b
@@ -24,6 +134,46 @@ class App(tk.Tk):
         self.protocol('WM_DELETE_WINDOW',self.close);self.bind('<Control-o>',lambda e:self.open_dialog());self.bind('<Control-s>',lambda e:self.save(True));self.bind('<Control-z>',lambda e:self.undo());self.update_header()
         t=self.tab('Welcome','Edit both games from a single application.');ttk.Label(t,text='1. Open a .sav file.\n2. Choose a tab and apply your changes.\n3. Review the changes, then Save as or Overwrite.\n\nThe game is detected automatically. Catalogs are included; no game installation is required for save editing.\nUse Game Patches to apply or restore experimental Evoland 2 bug fixes.\nEvery overwrite creates a timestamped backup. Close the game before replacing its save.',justify='left',wraplength=700).pack(anchor='w',pady=20)
         if len(sys.argv)>1:self.open_path(sys.argv[1])
+    def set_installation(self,folder,persist=True):
+        if not is_installation(folder):
+            return False
+        self.installation=Path(folder).resolve()
+        self.installation_label.set(f'Game installation: {self.installation}')
+        if persist:
+            try:remember_installation(self.installation)
+            except OSError:pass  # The selection remains usable this session.
+        window=getattr(self,'patch_window',None)
+        if window and window.winfo_exists() and window.path.get()!=str(self.installation):
+            window.path.set(str(self.installation));window.check()
+        return True
+    def detect_installation(self,rescan=False):
+        choices=discover_installations(include_remembered=not rescan)
+        if choices:
+            self.set_installation(choices[0])
+            if rescan and len(choices)>1:
+                messagebox.showinfo('Multiple installations','Multiple installations found. The first was selected; use Choose game folder to select another.\n\n'+'\n'.join(map(str,choices)),parent=self)
+        elif not self.installation or not is_installation(self.installation):
+            self.installation=None
+            self.installation_label.set('Game installation: not detected. Choose a folder or open a save manually.')
+        elif rescan:
+            self.installation_label.set(f'Game installation (manual): {self.installation}')
+    def choose_installation(self):
+        p=filedialog.askdirectory(parent=self,title='Choose Evoland Legendary Edition installation',**({'initialdir':str(self.installation)} if self.installation else {}))
+        if p and not self.set_installation(p):
+            messagebox.showerror('Invalid installation','Choose the folder containing evo1.pak and evo2.pak.',parent=self)
+    def set_theme(self,mode,persist=True):
+        if mode not in PALETTES:raise ValueError('Unknown theme')
+        apply_theme(self,mode)
+        self.theme_mode=mode
+        self.theme_button_text.set('Light mode' if mode=='dark' else 'Dark mode')
+        if persist:
+            try:
+                path=theme_path();path.parent.mkdir(parents=True,exist_ok=True)
+                path.write_text(mode+'\n',encoding='utf8')
+            except OSError:
+                pass  # Theme switching still works in a read-only profile.
+    def toggle_theme(self):
+        self.set_theme('light' if self.theme_mode=='dark' else 'dark')
     def open_patches(self):
         if getattr(self,'patch_window',None) and self.patch_window.winfo_exists():self.patch_window.lift();return
         self.patch_window=PatchWindow(self)
@@ -74,7 +224,8 @@ class App(tk.Tk):
         if self.confirm_discard():self.destroy()
     def open_dialog(self):
         if not self.confirm_discard():return
-        p=filedialog.askopenfilename(filetypes=[('Evoland saves','*.sav'),('All files','*')],parent=self)
+        folder=save_directory(self.installation)
+        p=filedialog.askopenfilename(filetypes=[('Evoland saves','*.sav'),('All files','*')],parent=self,**({'initialdir':str(folder)} if folder else {}))
         if p:self.open_path(p)
     def open_path(self,path):
         try:
@@ -115,7 +266,7 @@ class App(tk.Tk):
             backup=write_save(p,self.draft);self.open_path(p);self.status.set('Saved. Checksum verified.'+(f' Backup: {backup.name}' if backup else ''))
         except Exception as e:messagebox.showerror('Cannot save',str(e),parent=self)
     def import_catalog(self):
-        p=filedialog.askdirectory(title='Select folder containing evo1.pak and evo2.pak',parent=self)
+        p=filedialog.askdirectory(title='Select folder containing evo1.pak and evo2.pak',parent=self,**({'initialdir':str(self.installation)} if self.installation else {}))
         if not p:return
         try:self.catalog=extract(p);self.rebuild() if self.state else None;self.status.set('Game catalogs loaded from your installation (this session).')
         except Exception as e:messagebox.showerror('Catalog import failed',str(e),parent=self)
@@ -346,6 +497,11 @@ if __name__=='__main__':
         if not app.catalog.get('Evo1') or not app.catalog.get('Evo2'):
             raise RuntimeError('Game catalogs missing')
         app.open_patches()
+        for mode in ('dark','light','dark'):
+            app.set_theme(mode,persist=False)
+            app.update_idletasks()
+            assert ttk.Style(app).lookup('Treeview','background')==PALETTES[mode]['field']
+            assert app.patch_window.cget('background')==PALETTES[mode]['bg']
         app.update_idletasks()
         app.destroy()
     else:
