@@ -5,24 +5,28 @@ from pathlib import Path
 import json,sys,math
 from save_engine import *
 from catalog import extract,SLOTS,TIMES,human
+from patch_gui import PatchWindow
 ROOT=Path(__file__).resolve().parent
 class App(tk.Tk):
     def __init__(self):
-        super().__init__();self.title('Evoland Save Editor');self.geometry('1120x760');self.minsize(850,580)
+        super().__init__();self.title('Evoland Toolkit');self.geometry('1120x760');self.minsize(850,580)
         self.catalog=json.loads((ROOT/'catalog.json').read_text(encoding='utf8'));self.path=None;self.original=self.draft=None;self.state=None;self.game=None;self.history=[];self.tables={};self.statvars={}
         style=ttk.Style(self);
         if 'clam' in style.theme_names() and self.tk.call('tk','windowingsystem')=='x11':style.theme_use('clam')
         style.configure('Title.TLabel',font=('TkDefaultFont',18,'bold'));style.configure('Heading.TLabel',font=('TkDefaultFont',12,'bold'));style.configure('Treeview',rowheight=26);style.configure('TButton',padding=6);style.configure('TNotebook.Tab',padding=(12,8))
         outer=ttk.Frame(self,padding=16);outer.pack(fill='both',expand=True)
-        head=ttk.Frame(outer);head.pack(fill='x');ttk.Label(head,text='Evoland Save Editor',style='Title.TLabel').pack(side='left');self.game_label=tk.StringVar(value='No save loaded');ttk.Label(head,textvariable=self.game_label,style='Heading.TLabel').pack(side='right')
+        head=ttk.Frame(outer);head.pack(fill='x');ttk.Label(head,text='Evoland Toolkit',style='Title.TLabel').pack(side='left');self.game_label=tk.StringVar(value='No save loaded');ttk.Button(head,text='Game Patches…',command=self.open_patches).pack(side='right',padx=(12,0));ttk.Label(head,textvariable=self.game_label,style='Heading.TLabel').pack(side='right')
         self.summary=tk.StringVar(value='Open an Evoland 1 or Evoland 2 .sav file to get started.');ttk.Label(outer,textvariable=self.summary,wraplength=950).pack(anchor='w',pady=(5,12))
         bar=ttk.Frame(outer);bar.pack(fill='x',pady=(0,10));self.actions={}
         for text,fn in [('Open save…',self.open_dialog),('Save as…',lambda:self.save(True)),('Overwrite save',lambda:self.save(False)),('Undo',self.undo),('Review changes',self.review),('Reset edits',self.reset),('Import game catalogs…',self.import_catalog)]:
             b=ttk.Button(bar,text=text,command=fn);b.pack(side='left',padx=(0,5));self.actions[text]=b
         self.tabs=ttk.Notebook(outer);self.tabs.pack(fill='both',expand=True);self.status=tk.StringVar(value='Offline • Original save stays intact until you save.');ttk.Label(outer,textvariable=self.status,wraplength=1000).pack(anchor='w',pady=(10,0))
         self.protocol('WM_DELETE_WINDOW',self.close);self.bind('<Control-o>',lambda e:self.open_dialog());self.bind('<Control-s>',lambda e:self.save(True));self.bind('<Control-z>',lambda e:self.undo());self.update_header()
-        t=self.tab('Welcome','Edit both games from a single application.');ttk.Label(t,text='1. Open a .sav file.\n2. Choose a tab and apply your changes.\n3. Review the changes, then Save as or Overwrite.\n\nThe game is detected automatically. Catalogs are included; no game installation is required.\nEvery overwrite creates a timestamped backup. Close the game before replacing its save.',justify='left',wraplength=700).pack(anchor='w',pady=20)
+        t=self.tab('Welcome','Edit both games from a single application.');ttk.Label(t,text='1. Open a .sav file.\n2. Choose a tab and apply your changes.\n3. Review the changes, then Save as or Overwrite.\n\nThe game is detected automatically. Catalogs are included; no game installation is required for save editing.\nUse Game Patches to apply or restore experimental Evoland 2 bug fixes.\nEvery overwrite creates a timestamped backup. Close the game before replacing its save.',justify='left',wraplength=700).pack(anchor='w',pady=20)
         if len(sys.argv)>1:self.open_path(sys.argv[1])
+    def open_patches(self):
+        if getattr(self,'patch_window',None) and self.patch_window.winfo_exists():self.patch_window.lift();return
+        self.patch_window=PatchWindow(self)
     def tab(self,name,desc):
         t=ttk.Frame(self.tabs,padding=14);self.tabs.add(t,text=name);ttk.Label(t,text=name,style='Heading.TLabel').pack(anchor='w');ttk.Label(t,text=desc,wraplength=930).pack(anchor='w',pady=(3,10));return t
     def buttons(self,parent,*items):
@@ -64,7 +68,7 @@ class App(tk.Tk):
             s=self.state;g='Evoland 1' if self.game=='Evo1' else 'Evoland 2';self.game_label.set(g+' • '+('Unsaved edits' if dirty else 'Checksum valid'))
             if self.game=='Evo2': detail=f"Level {self.get(('level','level'))}   |   {self.get(('currentLevel',))}   |   {self.get(('gold',)):,} gold"
             else: detail=f"Level {self.get(('levels',0,'lv'))}   |   {self.get(('world',))[1]}   |   {self.get(('money',)):,} glis"
-            self.summary.set(f'{self.path.name}   •   {detail}');self.title('Evoland Save Editor — '+self.path.name+(' *' if dirty else ''))
+            self.summary.set(f'{self.path.name}   •   {detail}');self.title('Evoland Toolkit — '+self.path.name+(' *' if dirty else ''))
     def confirm_discard(self):return self.original==self.draft or messagebox.askyesno('Discard edits?','There are unsaved changes. Discard them?',parent=self)
     def close(self):
         if self.confirm_discard():self.destroy()
@@ -341,6 +345,7 @@ if __name__=='__main__':
         app=App()
         if not app.catalog.get('Evo1') or not app.catalog.get('Evo2'):
             raise RuntimeError('Game catalogs missing')
+        app.open_patches()
         app.update_idletasks()
         app.destroy()
     else:

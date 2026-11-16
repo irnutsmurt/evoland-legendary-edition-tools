@@ -1,6 +1,6 @@
-# Evoland Save Editor 3.0
+# Evoland Toolkit — alpha 0.1
 
-A single offline desktop save editor for **Evoland** and **Evoland 2** (Legendary Edition). Automatically detects the game from the save's GameType, not its filename. No game archives or personal save files are included.
+An offline desktop toolkit with a save editor for **Evoland** and **Evoland 2** (Legendary Edition). Automatically detects the game from the save's GameType, not its filename. No game archives or personal save files are included.
 
 ## Quick start
 
@@ -12,6 +12,23 @@ A single offline desktop save editor for **Evoland** and **Evoland 2** (Legendar
 6. Use **Save as…** to make a test copy, or **Overwrite save** to replace the opened file. Every overwrite creates a timestamped `.bak` file alongside the save. Never edit a save while the game is running; cloud sync may overwrite manual changes.
 
 Typical Steam location: `steamapps/common/Evoland Legendary Edition/save/`. Slot names alone are not reliable game identifiers. You can pass a save path on the command line, e.g. `python editor.py slot0.sav`.
+
+## Experimental game patches (Evoland 2)
+
+Open **Game Patches** from the main window; no save needs to be open. Close the game, select its installation directory, and click **Check**. Enable either patch independently and click **Apply selection**. To undo, click **Restore original game**. Only the exact supplied Legendary Edition boot-file builds are accepted. The patcher verifies SHA-256 before and after modification, backs up the originals in `.evoland-toolkit`, and rolls back completed writes on a detected failure. Keep your own save backup before testing. No game files or saves are distributed; the patch manifest contains targeted instruction edits only.
+
+- **001 — Shooter softlock:** correct formation target boundary calculations using actual delta-scaled movement; clamp formation targets to the bounds. Regular enemies continuously offscreen for approximately three seconds after entering the play area are removed using the existing enemy removal routine, which also updates the wave list. Bosses and rebosses are excluded from the cleanup. Escaping enemies grant no kill rewards. Test by deliberately letting regular enemies escape, then verify the wave and boss progression.
+- **002 — Future Trunkodile wake-up:** if the 3D creature starts waking but does not begin movement within approximately two seconds, invoke its original wake-up callback. Guard against duplicate callbacks. Fina's charged attack and collision logic are not bypassed. Test both a fresh puzzle and an affected save. If the creature is blocked by geometry rather than the animation callback, this patch may not resolve it; the existing save editor remains available to repair positions.
+
+Both are **experimental**: bytecode structure, branches, debug information and unchanged functions were checked in both supplied builds; no running-game/JIT or gameplay verification has been performed. Do not treat these as confirmed fixes. The timers are engineering defaults, not measured gameplay thresholds. A game update may require new patch recipes. The patcher refuses unknown hashes and never edits saves. A forced interruption between boot-file writes may leave a mixed selection; reopen the patcher and apply the desired selection or restore originals.
+
+Run the optional integration tests against a folder containing both original boot files:
+
+```sh
+python3 test_patches.py /path/to/game
+```
+
+Tests operate on temporary copies only. `patch_recipes.py` and `hlbytecode.py` are developer tools for regenerating and checking the manifest locally. No original game binaries are included.
 
 ## Editing features
 
@@ -51,7 +68,7 @@ python3 catalog.py '/path/to/Evoland Legendary Edition' > catalog.new.json
 
 ## Optional Windows executable
 
-Run `build-windows.bat` on Windows with Python installed. This installs PyInstaller and builds `dist/EvolandSaveEditor.exe` with the catalog included. A Windows executable is not included in this ZIP; this build script has not been run on Windows in this environment.
+Run `build-windows.bat` on Windows with Python installed. This installs PyInstaller and builds `dist/EvolandToolkit.exe` with the catalog included. A Windows executable is not included in this ZIP; this build script has not been run on Windows in this environment.
 
 ## Offline tests
 
@@ -64,6 +81,6 @@ The optional real-save tests edit only in memory and never overwrite input files
 
 ## Standalone release builds (no Python required for users)
 
-The GitHub Actions workflow `.github/workflows/build.yml` builds an x86-64 Windows portable `.exe`, a Linux AppImage, and a Linux portable archive. Run **Actions → Build standalone editor → Run workflow** after pushing this source to a GitHub repository. Download the artifacts from the completed run. Pushing a `v*` tag also creates or updates a GitHub Release with all binaries. No account tokens are required beyond the automatic repository workflow token.
+The GitHub Actions workflow `.github/workflows/build.yml` builds an x86-64 Windows portable `.exe`, a Linux AppImage, and a Linux portable archive. Run **Actions → Build standalone toolkit → Run workflow** after pushing this source to a GitHub repository. Download the artifacts from the completed run. Pushing a `v*` tag also creates or updates a GitHub Release with all binaries. No account tokens are required beyond the automatic repository workflow token.
 
-Windows users double-click the executable. Linux users mark the AppImage executable (`chmod +x EvolandSaveEditor-linux-x86_64.AppImage`) and launch it. On a system without FUSE use `--appimage-extract-and-run`, or extract the portable tar.gz and launch `EvolandSaveEditor`. The release workflow targets Ubuntu 22.04 as its Linux build baseline (glibc 2.35); actual compatibility depends on installed desktop libraries. Windows binaries are unsigned and may trigger SmartScreen. The workflow builds on its native operating systems and smoke-tests the packaged GUI. The continuous AppImage tool download is not pinned; pin a reviewed version/checksum for reproducible public releases.
+Windows users double-click the executable. Linux users mark the AppImage executable (`chmod +x EvolandToolkit-linux-x86_64.AppImage`) and launch it. On a system without FUSE use `--appimage-extract-and-run`, or extract the portable tar.gz and launch `EvolandToolkit`. The release workflow targets Ubuntu 22.04 as its Linux build baseline (glibc 2.35); actual compatibility depends on installed desktop libraries. Windows binaries are unsigned and may trigger SmartScreen. The workflow builds on its native operating systems and smoke-tests the packaged GUI. The continuous AppImage tool download is not pinned; pin a reviewed version/checksum for reproducible public releases.

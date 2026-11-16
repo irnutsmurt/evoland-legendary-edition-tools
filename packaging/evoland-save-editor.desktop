@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Evoland Save Editor
+Name=Evoland Toolkit
 Comment=Edit Evoland 1 and Evoland 2 saves
 Exec=evoland-save-editor %f
 Icon=evoland-save-editor
