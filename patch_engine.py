@@ -4,7 +4,9 @@ import hashlib,json,os,stat,tempfile,datetime
 ROOT=Path(__file__).resolve().parent
 PATCH_INFO={
  'shooter':('001 · Shooter softlock','Correct horizontal formation boundaries using actual frame movement. Remove regular enemies after three continuous offscreen seconds, once their entrance is finished. Bosses and rebosses are excluded from cleanup.'),
- 'dragon':('002 · Future Trunkodile wake-up','Experimental watchdog: if the 3D wake animation fails to start movement within two seconds, run the original movement callback. Normal Fina attacks, obstacles and puzzle rules are unchanged. Does not repair trapped coordinates.')}
+ 'dragon':('002 · Future Trunkodile wake-up','Experimental watchdog: if the 3D wake animation fails to start movement within two seconds, run the original movement callback. Normal Fina attacks, obstacles and puzzle rules are unchanged. Does not repair trapped coordinates.'),
+ 'mushroom':('003 · Windy Caves mushroom jumps','Experimental: use smaller physics steps in the future cave, limit mushroom thrust to its exact duration and stabilize held-jump height with a small clearance margin. Other maps are unchanged.'),
+ 'fps60':('004 · 60 FPS frame limiter','Cap the engine loop at 60 FPS using real elapsed time, without relying on VSync or GPU drivers. Aims to prevent high-FPS timing bugs across the game; slower frames are not sped up. Experimental.')}
 class PatchError(RuntimeError):pass
 
 def sha(data):return hashlib.sha256(data).hexdigest()

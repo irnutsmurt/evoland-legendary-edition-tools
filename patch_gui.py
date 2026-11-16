@@ -7,13 +7,32 @@ from game_discovery import discover, is_installation
 
 class PatchWindow(tk.Toplevel):
     def __init__(self,parent):
-        super().__init__(parent);self.title('Evoland Toolkit — Game Patches');self.geometry('810x580');self.minsize(720,510);self.transient(parent)
+        super().__init__(parent);self.title('Evoland Toolkit — Game Patches');self.geometry('810x720');self.minsize(720,560);self.transient(parent)
         f=ttk.Frame(self,padding=18);f.pack(fill='both',expand=True)
         ttk.Label(f,text='Game patches',style='Title.TLabel').pack(anchor='w');ttk.Label(f,text='Evoland 2 · Experimental community patches',style='Heading.TLabel').pack(anchor='w',pady=(4,5));ttk.Label(f,text='Only the verified Legendary Edition builds are supported. Close the game before applying or restoring patches.',wraplength=740).pack(anchor='w',pady=(0,12))
         ttk.Label(f,text='Game installation folder').pack(anchor='w');self.path=tk.StringVar(value=str(getattr(parent,'installation',None) or discover()));row=ttk.Frame(f);row.pack(fill='x',pady=(4,6));ttk.Entry(row,textvariable=self.path).pack(side='left',fill='x',expand=True);ttk.Button(row,text='Browse…',command=self.browse).pack(side='left',padx=(6,0));ttk.Button(row,text='Check',command=self.check).pack(side='left',padx=(6,0));self.info=tk.StringVar(value='Select the folder containing hlboot.dat or sdlboot.dat.');ttk.Label(f,textvariable=self.info,wraplength=740,justify='left').pack(anchor='w',pady=(3,12))
+        # Scroll the patch list independently, keeping Apply/Restore visible on small displays.
+        area=ttk.Frame(f);area.pack(fill='both',expand=True)
+        canvas=tk.Canvas(area,height=240,highlightthickness=0,borderwidth=0,background=ttk.Style(self).lookup('TFrame','background'))
+        scroll=ttk.Scrollbar(area,orient='vertical',command=canvas.yview);scroll.pack(side='right',fill='y');canvas.pack(side='left',fill='both',expand=True);canvas.configure(yscrollcommand=scroll.set)
+        patchlist=ttk.Frame(canvas);item=canvas.create_window((0,0),window=patchlist,anchor='nw');descriptions=[]
+        patchlist.bind('<Configure>',lambda e:canvas.configure(scrollregion=canvas.bbox('all')))
+        def resize(e):
+            canvas.itemconfigure(item,width=e.width)
+            for label in descriptions:label.configure(wraplength=max(200,e.width-40))
+        canvas.bind('<Configure>',resize)
+        canvas.bind('<<ThemeChanged>>',lambda e:canvas.configure(background=ttk.Style(self).lookup('TFrame','background')))
+        def wheel(e):
+            delta=-1 if getattr(e,'num',None)==4 else 1 if getattr(e,'num',None)==5 else -1 if e.delta>0 else 1
+            canvas.yview_scroll(delta,'units');return 'break'
+        def wheel_bind(widget):
+            for event in ('<MouseWheel>','<Button-4>','<Button-5>'):widget.bind(event,wheel,add='+')
+            for child in widget.winfo_children():wheel_bind(child)
         self.vars={};self.controls=[]
         for k,(title,desc) in PATCH_INFO.items():
-            box=ttk.LabelFrame(f,text=title,padding=10);box.pack(fill='x',pady=(0,8));v=tk.BooleanVar(value=False);self.vars[k]=v;c=ttk.Checkbutton(box,text='Enable experimental patch',variable=v,command=self.enable_buttons);c.pack(anchor='w');self.controls.append(c);ttk.Label(box,text=desc,wraplength=700,justify='left').pack(anchor='w',pady=(4,0))
+            box=ttk.Frame(patchlist,padding=(4,4));box.pack(fill='x',pady=(0,3));v=tk.BooleanVar(value=False);self.vars[k]=v;c=ttk.Checkbutton(box,text=title,variable=v,command=self.enable_buttons);c.pack(anchor='w');self.controls.append(c);label=ttk.Label(box,text=desc,wraplength=700,justify='left');label.pack(anchor='w',padx=(22,0),pady=(2,0));descriptions.append(label);ttk.Separator(patchlist).pack(fill='x',pady=(0,3))
+        wheel_bind(canvas)
+        self.patch_canvas=canvas
         self.ready=False;self.checked_path=None;self.states=[];bar=ttk.Frame(f);bar.pack(fill='x',pady=(5,6));self.applybtn=ttk.Button(bar,text='Apply selection',command=lambda:self.run(False));self.applybtn.pack(side='left');self.restorebtn=ttk.Button(bar,text='Restore original game',command=lambda:self.run(True));self.restorebtn.pack(side='left',padx=6);ttk.Button(bar,text='Close',command=self.destroy).pack(side='right');self.status=tk.StringVar(value='Original boot files will be backed up automatically. Saves are never edited here.');ttk.Label(f,textvariable=self.status,wraplength=740).pack(anchor='w',pady=(5,0));self.path.trace_add('write',lambda *_:self.invalidate());self.enable_buttons()
         if self.path.get():self.check()
     def invalidate(self):

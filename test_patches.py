@@ -1,5 +1,6 @@
 """Integration tests against a user-supplied supported game installation (copies only)."""
 import sys, tempfile, shutil
+from itertools import combinations
 from pathlib import Path
 from unittest.mock import patch
 import patch_engine as p
@@ -10,7 +11,9 @@ def run(source):
         for name in names: shutil.copy2(source/name,root/name)
         orig={n:(root/n).read_bytes() for n in names}
         assert all(s['state']=='' for s in p.inspect(root))
-        for selected in ({'shooter'}, {'shooter','dragon'}, {'dragon'}, set()):
+        # Upgrade from an existing two-patch installation; visit every combination.
+        selections=[{'shooter','dragon'}]+[set(c) for n in range(1,len(p.PATCH_INFO)+1) for c in combinations(sorted(p.PATCH_INFO),n)]+[set()]
+        for selected in selections:
             states=p.apply(root,selected)
             assert all(s['state']==p.key(selected) and s['backup'] for s in states)
             for n in names:
