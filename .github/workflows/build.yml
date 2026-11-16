@@ -39,7 +39,7 @@ jobs:
       - name: Build AppImage and portable archive
         run: |
           . .venv/bin/activate
-          curl --fail --location --retry 3 https://github.com/AppImage/appimagetool/releases/continuous/download/appimagetool-x86_64.AppImage -o "$RUNNER_TEMP/appimagetool"
+          curl --fail --location --retry 3 https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage -o "$RUNNER_TEMP/appimagetool"
           chmod +x "$RUNNER_TEMP/appimagetool"
           APPIMAGETOOL="$RUNNER_TEMP/appimagetool" bash packaging/build-linux.sh
       - uses: actions/upload-artifact@v4
