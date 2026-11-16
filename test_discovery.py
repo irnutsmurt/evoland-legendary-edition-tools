@@ -9,7 +9,7 @@ class DiscoveryTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
-        self.root = Path(self.tmp.name)
+        self.root = Path(self.tmp.name).resolve()
         self.steam = self.root / 'Steam'
         (self.steam / 'steamapps').mkdir(parents=True)
         self.settings = self.root / 'settings' / 'installation.json'
